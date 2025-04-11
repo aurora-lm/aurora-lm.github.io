@@ -1,14 +1,14 @@
 ---
-title: "Home"
-slug: home
-description: "Home Page"
+title: "About Us"
+slug: about-us
+description: "About Us"
 category:
   - One
 tags:
   - AuroraLM
 pubDate: 2025-01-01
 cover: https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/home/aurora-lm-logo.png
-coverAlt: Home
+coverAlt: About Us
 author: AuroraLM Team
 ---
 
@@ -21,7 +21,7 @@ As part of our commitment to openness, we plan to open-source the entire trainin
   <tr>
     <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
       <img 
-        src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/home/huu.jpeg" 
+        src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/huu.jpeg" 
         width="100" 
         style="display: block; margin: 0 auto; border-radius:50%;" 
       /><br>
@@ -30,11 +30,11 @@ As part of our commitment to openness, we plan to open-source the entire trainin
     </td>
     <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
       <img 
-        src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/home/harsh.jpeg" 
+        src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/harsh.jpeg" 
         width="100" 
         style="display: block; margin: 0 auto; border-radius:50%;" 
       /><br>
-      <strong><a href="https://harshraj-172.github.io/">Harsh Raj</a></strong><br>
+      <strong><a href="https://harshraj172.github.io/">Harsh Raj</a></strong><br>
       <em>Training Lead</em>
     </td>
   </tr>
@@ -50,10 +50,10 @@ As part of our commitment to openness, we plan to open-source the entire trainin
 Members are funded by the [Berkeley Sky Computing ](https://sky.cs.berkeley.edu/). The compute resources are also generously supported by [Lambda Labs](https://lambdalabs.com/) and [Anyscale](https://www.anyscale.com/). -->
 
 ### Contact
-X: [@Ontocord](https://x.com/Ontocord)
+<!-- X: [@Ontocord](https://x.com/Ontocord) -->
 
 Email: huu@ontocord.ai
 
-Huggingface: [ontocord](https://huggingface.co/ontocord)
+<!-- Huggingface: [ontocord](https://huggingface.co/ontocord)
 
-Github: [ontocord](https://github.com/ontocord)
+Github: [ontocord](https://github.com/aurora-lm) -->
