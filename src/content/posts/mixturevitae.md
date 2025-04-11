@@ -14,7 +14,11 @@ author: AuroraM Team
 ---
 **By: [Huu Nguyen](https://www.linkedin.com/in/huu-ai-machine-learning/), [Harsh Raj](hraj172.github.io), [Ken Tsui](https://www.linkedin.com/in/ken-tsui-06889b29/?originalSubdomain=uk) -- Apr 12, 2025**
 
-Dataset: [Huggingface](https://huggingface.co/datasets/ontocord/MixtureVitae)
+<div align="center">
+
+<strong>Huggingface:</strong> <a href="https://huggingface.co/datasets/ontocord/MixtureVitae" style="color: #1f6feb;" target="_blank"><strong>MixtureVitae</strong></a>
+
+</div>
 
 Our blog is a way to share our journey with the wider community and is a living and organic document. We plan to update it continuously, alongside other posts on our site, as we further develop our data and models. In creating this dataset, we build on the work of industry giants such as Common Crawl, FineWeb, TxT360, Open License Corpus, Nemotron-CC, MAGAcorpus, Mint-PDF, and many others mentioned in the following sections.
 
