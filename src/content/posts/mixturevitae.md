@@ -8,9 +8,9 @@ tags:
   - Pre-Training
   - Permissive-Data
 pubDate: 2025-04-12
-cover: https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/aurora-lm-logo.png
+cover: https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/mixturevitae-logo.png
 coverAlt: Blue Bird Flash
-author: OntocordAI Team
+author: AuroraM Team
 ---
 **By: [Huu Nguyen](https://www.linkedin.com/in/huu-ai-machine-learning/), [Harsh Raj](hraj172.github.io) -- Apr 12, 2025**
 
@@ -32,7 +32,7 @@ The main portion of the dataset can be found [here], [here], and [here].  Howeve
 ### What’s Inside the MixtureVitae?
 We filtered, collated, reorganized and included data from various open corpora, and we created our own original data using synthetic data generation techniques. The corpus spans a rich variety of open datasets, curated datasets, and synthetic generations.
 
-![img](https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/pie-chart.png)
+![img](https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/pie-chart.jpg)
 
 #### Web Based Open Datasets
 We filter a subset of the following web crawled datasets as described below. 
@@ -147,8 +147,8 @@ This is an evolving blog, so check back in from time to time to get updates and 
 ## Citation
 ```bibtex
 @misc{mixturevitae_2025,
-  author       = {OntocordAI Team},
-  title        = {},
+  author       = {Huu Nguyen, Harsh Raj, Diganta Misra, Victor May},
+  title        = {MixtureVitae: The pre-training dataset for the Aurora-M2 models},
   howpublished = {https://aurora-lm.github.io/posts/mixturevitae},
   note         = {Accessed: 2025-04-12},
   year         = {2025}
