@@ -176,7 +176,7 @@ As part of our commitment to openness, we plan to open-source the entire trainin
       /&gt;&lt;br&gt;
       &lt;strong&gt;&lt;a href=&quot;https://mrcabbage972.github.io/&quot;&gt;Ken Tsui&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
       &lt;!-- &lt;em&gt;Training Lead&lt;/em&gt; --&gt;
-    &lt;/td&gt;
+    &lt;!-- &lt;/td&gt;
     &lt;td style=&quot;width: 25%; text-align: center; vertical-align: middle; height: 150px;&quot;&gt;
       &lt;img 
         src=&quot;https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/harsh.jpeg&quot; 
@@ -203,7 +203,7 @@ As part of our commitment to openness, we plan to open-source the entire trainin
       /&gt;&lt;br&gt;
       &lt;strong&gt;&lt;a href=&quot;https://harshraj172.github.io/&quot;&gt;Vu Minh Chien&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
       &lt;!-- &lt;em&gt;Training Lead&lt;/em&gt; --&gt;
-    &lt;/td&gt;
+    &lt;/td&gt; --&gt;
   &lt;/tr&gt;
 &lt;/tr&gt;
 &lt;/table&gt;
