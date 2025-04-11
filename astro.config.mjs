@@ -9,7 +9,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://novasky-ai.github.io/",
+  site: "https://aurora-lm.github.io/",
   // base: "",
   trailingSlash: "always",
   prefetch: {
