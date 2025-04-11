@@ -1,5 +1,5 @@
 ---
-title: "MixtureVitae: The pre-training dataset for the Aurora-M2 models"
+title: "MixtureVitae: A Permissive, High-Performance, Open-Access Pretraining Dataset"
 slug: mixturevitae
 description: "We introduce an open source pretraining dataset designed to lower legal copyright uncertainty while still delivering high-performance. Our dataset, called MixtureVitae, is intended to train high-quality LLMs and create transparency and open access for AI research."
 category:
@@ -14,6 +14,7 @@ author: AuroraM Team
 ---
 **By: [Huu Nguyen](https://www.linkedin.com/in/huu-ai-machine-learning/), [Harsh Raj](hraj172.github.io) -- Apr 12, 2025**
 
+Dataset: [Huggingface](https://huggingface.co/datasets/ontocord/MixtureVitae)
 
 Our blog is a way to share our journey with the wider community and is a living and organic document. We plan to update it continuously, alongside other posts on our site, as we further develop our data and models. In creating this dataset, we build on the work of industry giants such as Common Crawl, FineWeb, TxT360, Open License Corpus, Nemotron-CC, MAGAcorpus, Mint-PDF, and many others mentioned in the following sections.
 

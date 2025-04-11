@@ -26,7 +26,7 @@ As part of our commitment to openness, we plan to open-source the entire trainin
         style="display: block; margin: 0 auto; border-radius:50%;" 
       /><br>
       <strong><a href="https://www.linkedin.com/in/huu-ai-machine-learning/">Huu Nguyen</a></strong><br>
-      <em>Data Lead</em>
+      <!-- <em>Data Lead</em> -->
     </td>
     <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
       <img 
@@ -35,7 +35,43 @@ As part of our commitment to openness, we plan to open-source the entire trainin
         style="display: block; margin: 0 auto; border-radius:50%;" 
       /><br>
       <strong><a href="https://harshraj172.github.io/">Harsh Raj</a></strong><br>
-      <em>Training Lead</em>
+      <!-- <em>Training Lead</em> -->
+    </td>
+    <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
+      <img 
+        src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/victor.jpg" 
+        width="100" 
+        style="display: block; margin: 0 auto; border-radius:50%;" 
+      /><br>
+      <strong><a href="https://mrcabbage972.github.io/">Ken Tsui</a></strong><br>
+      <!-- <em>Training Lead</em> -->
+    </td>
+    <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
+      <img 
+        src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/harsh.jpeg" 
+        width="100" 
+        style="display: block; margin: 0 auto; border-radius:50%;" 
+      /><br>
+      <strong><a href="https://harshraj172.github.io/">Diganta Misra</a></strong><br>
+      <!-- <em>Training Lead</em> -->
+    </td>
+    <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
+      <img 
+        src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/harsh.jpeg" 
+        width="100" 
+        style="display: block; margin: 0 auto; border-radius:50%;" 
+      /><br>
+      <strong><a href="https://harshraj172.github.io/">Victory May</a></strong><br>
+      <!-- <em>Training Lead</em> -->
+    </td>
+    <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
+      <img 
+        src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/harsh.jpeg" 
+        width="100" 
+        style="display: block; margin: 0 auto; border-radius:50%;" 
+      /><br>
+      <strong><a href="https://harshraj172.github.io/">Vu Minh Chien</a></strong><br>
+      <!-- <em>Training Lead</em> -->
     </td>
   </tr>
 </tr>
