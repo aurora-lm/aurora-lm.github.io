@@ -54,7 +54,7 @@ As part of our commitment to openness, we plan to open-source the entire trainin
       /><br>
       <strong><a href="https://harshraj172.github.io/">Diganta Misra</a></strong><br>
       <!-- <em>Training Lead</em> -->
-    </td>
+    <!-- </td>
     <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
       <img 
         src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/harsh.jpeg" 
@@ -63,16 +63,16 @@ As part of our commitment to openness, we plan to open-source the entire trainin
       /><br>
       <strong><a href="https://harshraj172.github.io/">Victory May</a></strong><br>
       <!-- <em>Training Lead</em> -->
-    </td>
+    <!-- </td>
     <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
       <img 
         src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/harsh.jpeg" 
         width="100" 
         style="display: block; margin: 0 auto; border-radius:50%;" 
       /><br>
-      <strong><a href="https://harshraj172.github.io/">Vu Minh Chien</a></strong><br>
+      <strong><a href="https://harshraj172.github.io/">Vu Minh Chien</a></strong><br> -->
       <!-- <em>Training Lead</em> -->
-    </td> -->
+    <!-- </td> --> --> -->
   </tr>
 </tr>
 </table>
