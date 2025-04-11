@@ -12,7 +12,7 @@ cover: https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/asse
 coverAlt: Blue Bird Flash
 author: AuroraM Team
 ---
-**By: [Huu Nguyen](https://www.linkedin.com/in/huu-ai-machine-learning/), [Harsh Raj](hraj172.github.io) -- Apr 12, 2025**
+**By: [Huu Nguyen](https://www.linkedin.com/in/huu-ai-machine-learning/), [Harsh Raj](hraj172.github.io), [Ken Tsui](https://www.linkedin.com/in/ken-tsui-06889b29/?originalSubdomain=uk) -- Apr 12, 2025**
 
 Dataset: [Huggingface](https://huggingface.co/datasets/ontocord/MixtureVitae)
 
