@@ -7,7 +7,7 @@ category:
 tags:
   - AuroraLM
 pubDate: 2025-01-01
-cover: https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/home/aurora-lm-logo.png
+cover: https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/aurora-lm-logo.png
 coverAlt: About Us
 author: AuroraLM Team
 ---

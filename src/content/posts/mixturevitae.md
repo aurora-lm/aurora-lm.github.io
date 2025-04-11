@@ -8,7 +8,7 @@ tags:
   - Pre-Training
   - Permissive-Data
 pubDate: 2025-04-12
-cover: https://raw.githubusercontent.com/NovaSky-AI/novasky-ai.github.io/main/assets/images/reduce-overthinking/blue-bird-flash.jpg
+cover: https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/aurora-lm-logo.png
 coverAlt: Blue Bird Flash
 author: OntocordAI Team
 ---
