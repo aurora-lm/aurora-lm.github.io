@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AuroraLM</title><description>Fully Permissive Open Multiodel LLMs</description><link>https://aurora-lm.github.io/</link><language>en-US</language><item><title>MixtureVitae: A Permissive, High-Performance, Open-Access Pretraining Dataset</title><link>https://aurora-lm.github.io/posts/mixturevitae/</link><guid isPermaLink="true">https://aurora-lm.github.io/posts/mixturevitae/</guid><description>We introduce an open source pretraining dataset designed to lower legal copyright uncertainty while still delivering high-performance. Our dataset, called MixtureVitae, is intended to train high-quality LLMs and create transparency and open access for AI research.</description><pubDate>Sat, 12 Apr 2025 00:00:00 GMT</pubDate><content:encoded>**By: [Huu Nguyen](https://www.linkedin.com/in/huu-ai-machine-learning/), [Harsh Raj](hraj172.github.io), [Ken Tsui](https://www.linkedin.com/in/ken-tsui-06889b29/?originalSubdomain=uk) -- Apr 12, 2025**
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AuroraLM</title><description>Fully Permissive Open Multiodel LLMs</description><link>https://aurora-lm.github.io/</link><language>en-US</language><item><title>MixtureVitae: A Permissive, High-Performance, Open-Access Pretraining Dataset</title><link>https://aurora-lm.github.io/posts/mixturevitae/</link><guid isPermaLink="true">https://aurora-lm.github.io/posts/mixturevitae/</guid><description>We introduce an open source pretraining dataset designed to lower legal copyright uncertainty while still delivering high-performance. Our dataset, called MixtureVitae, is intended to train high-quality LLMs and create transparency and open access for AI research.</description><pubDate>Sat, 12 Apr 2025 00:00:00 GMT</pubDate><content:encoded>**By: [Huu Nguyen](https://www.linkedin.com/in/huu-ai-machine-learning/), [Harsh Raj](hraj172.github.io), [Ken Tsui](https://www.linkedin.com/in/ken-tsui-06889b29/?originalSubdomain=uk), [Minh Chien Vu](https://scholar.google.com/citations?user=wcbZoCgAAAAJ&amp;hl=en), [Diganta Misra](https://digantamisra98.github.io/), [Victor May](https://mrcabbage972.github.io/), [Marianna Nezhurina](https://scholar.google.ru/citations?user=2KPv4VYAAAAJ&amp;hl=en) -- Apr 12, 2025**
 
 &lt;div align=&quot;center&quot;&gt;
 
@@ -182,19 +182,19 @@ As part of our commitment to openness, we plan to open-source the entire trainin
     &lt;/td&gt;
     &lt;td style=&quot;width: 25%; text-align: center; vertical-align: middle; height: 150px;&quot;&gt;
       &lt;img 
-        src=&quot;https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/victor.jpg&quot; 
-        width=&quot;100&quot; 
-        style=&quot;display: block; margin: 0 auto; border-radius:50%;&quot; 
-      /&gt;&lt;br&gt;
-      &lt;strong&gt;&lt;a href=&quot;https://mrcabbage972.github.io/&quot;&gt;Victory May&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
-    &lt;/td&gt;
-    &lt;td style=&quot;width: 25%; text-align: center; vertical-align: middle; height: 150px;&quot;&gt;
-      &lt;img 
         src=&quot;https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/chien.jpg&quot; 
         width=&quot;100&quot; 
         style=&quot;display: block; margin: 0 auto; border-radius:50%;&quot; 
       /&gt;&lt;br&gt;
       &lt;strong&gt;&lt;a href=&quot;https://scholar.google.com/citations?user=wcbZoCgAAAAJ&amp;hl=en&quot;&gt;Minh Chien Vu&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
+    &lt;/td&gt;
+    &lt;td style=&quot;width: 25%; text-align: center; vertical-align: middle; height: 150px;&quot;&gt;
+      &lt;img 
+        src=&quot;https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/victor.jpg&quot; 
+        width=&quot;100&quot; 
+        style=&quot;display: block; margin: 0 auto; border-radius:50%;&quot; 
+      /&gt;&lt;br&gt;
+      &lt;strong&gt;&lt;a href=&quot;https://mrcabbage972.github.io/&quot;&gt;Victory May&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;
     &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tr&gt;
