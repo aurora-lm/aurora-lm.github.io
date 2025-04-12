@@ -12,7 +12,7 @@ coverAlt: About Us
 author: AuroraLM Team
 ---
 
-AuroraLM is a collaborative effort led by open source collaborators especially OntocordAI to create completely permissive AI stack for building Multimodal lanrge Language Models. Create a model and dataset aligned with the laws of nations and policies. Developing such a model opens doors for research into creating AI systems that comply with the laws and policies of specific nations, companies, and regions.
+AuroraLM is a collaborative effort led by open source collaborators especially [OntocordAI](https://www.ontocord.ai/) to create completely permissive AI stack for building Multimodal lanrge Language Models. Create a model and dataset aligned with the laws of nations and policies. Developing such a model opens doors for research into creating AI systems that comply with the laws and policies of specific nations, companies, and regions.
 As part of our commitment to openness, we plan to open-source the entire training pipeline and experimental process—including data synthesis and the evolving methodologies we explore in model training. Stay with us!
 
 ### Team
