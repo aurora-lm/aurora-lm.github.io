@@ -16,7 +16,7 @@ We are a group of volunteer researchers dedicated to promoting equal access to m
 
 The <u>-m</u> in <u>Aurora-M2</u> refers to our focus on **multimodal**, **multilingual**, **multidomain mixture-of-experts (MoE) models**, each of which we aim to explore and develop through ongoing research.
 
-Building on our previous success—<u>[Aurora-M: Open Source Continual Pre-training for Multilingual Language and Code](https://arxiv.org/abs/2404.00399)</u>—we are training a family of models aligned with laws, regulations, and policies for controllable AI. The series will include models with parameter sizes of **3B**, **8B**, and **21B** parameter sizes, aligned with the comprehensive policy framework of the EU AI Act, specifically [Annex III](https://artificialintelligenceact.eu/annex/3/) of the Act. 
+Building on our previous success—<u>[Aurora-M: Open Source Continual Pre-training for Multilingual Language and Code](https://arxiv.org/abs/2404.00399)</u>—we are training a family of models aligned with laws, regulations, and policies for controllable AI. The series will include models with parameter sizes of **3B**, **8B**, and **21B**, aligned with the comprehensive policy framework of the EU AI Act, specifically [Annex III](https://artificialintelligenceact.eu/annex/3/) of the Act. 
 
 As part of our commitment to openness, we plan to open-source the entire training pipeline and experimental process—including data synthesis and the evolving methodologies we employ in model training. Stay with us!
 ### Team
