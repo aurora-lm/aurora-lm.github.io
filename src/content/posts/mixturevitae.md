@@ -37,7 +37,10 @@ The main portion of the dataset can be found at [HuggingFace](https://huggingfac
 ### What’s Inside the MixtureVitae?
 We filtered, collated, reorganized and included data from various open corpora, and we created our own original data using synthetic data generation techniques. The corpus spans a rich variety of open datasets, curated datasets, and synthetic generations.
 
-![img](https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/pie-chart.jpg)
+<figure>
+  <img src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/pie-chart.jpg" alt="Proportions of Open Web, Curated, and Synthetic Dataset in MixtureVitae">
+  <figcaption>Figure 1: The proportions of Open Web, Curated, and Synthetic Dataset in <em>MixtureVitae</em>.</figcaption>
+</figure>
 
 #### Web Based Open Datasets
 We filter a subset of the following web crawled datasets as described below. 
@@ -102,8 +105,8 @@ Additionally, We include widely-used open source and permissive post-training da
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/flow.png" alt="Proportions of Open Web, Curated, and Synthetic Dataset in MixtureVitae">
-  <figcaption>Figure 1: The proportions of Open Web, Curated, and Synthetic Dataset in <em>MixtureVitae</em>.</figcaption>
+  <img src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/flow.png" alt="The process of filtering and compiling MixtureVitae">
+  <figcaption>Figure 2: Flowchart illustrating the process of filtering and compiling <em>MixtureVitae</em>.</figcaption>
 </figure>
 
 
