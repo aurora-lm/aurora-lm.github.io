@@ -5,14 +5,14 @@ description: "About Us"
 category:
   - One
 tags:
-  - Aurora-M
+  - Aurora-M2
 pubDate: 2025-01-01
 cover: https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/aurora-lm-logo.png
 coverAlt: About Us
-author: Aurora-M Team
+author: Aurora-M2 Team
 ---
 
-AuroraLM is a collaborative effort led by open source collaborators especially [OntocordAI](https://www.ontocord.ai/) to create completely permissive AI stack for building Multimodal lanrge Language Models. Create a model and dataset aligned with the laws of nations and policies. Developing such a model opens doors for research into creating AI systems that comply with the laws and policies of specific nations, companies, and regions.
+Aurora-M2 is a collaborative effort led by open source collaborators especially [OntocordAI](https://www.ontocord.ai/) to create completely permissive AI stack for building Multimodal lanrge Language Models. Create a model and dataset aligned with the laws of nations and policies. Developing such a model opens doors for research into creating AI systems that comply with the laws and policies of specific nations, companies, and regions.
 As part of our commitment to openness, we plan to open-source the entire training pipeline and experimental process—including data synthesis and the evolving methodologies we explore in model training. Stay with us!
 
 ### Team
@@ -101,7 +101,7 @@ Members are funded by the [Berkeley Sky Computing ](https://sky.cs.berkeley.edu/
 ### Contact
 <!-- X: [@Ontocord](https://x.com/Ontocord) -->
 
-Github: [AuroraLM](https://github.com/aurora-lm)
+Github: [Aurora-M2](https://github.com/aurora-lm)
 
 X: [@Ontocord](https://x.com/Ontocord) 
 

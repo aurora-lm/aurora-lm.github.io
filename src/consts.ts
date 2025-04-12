@@ -2,19 +2,19 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 // Base Page Metadata, src/layouts/BaseLayout.astro
-export const BRAND_NAME = "AuroraLM";
-export const SITE_TITLE = "AuroraLM";
+export const BRAND_NAME = "Aurora-M2";
+export const SITE_TITLE = "Aurora-M2";
 export const SITE_DESCRIPTION = "Fully Permissive Open Multiodel LLMs";
 
 // Tags Page Metadata, src/pages/tags/index.astro
-export const Tags_TITLE = "AuroraLM - All Tags";
+export const Tags_TITLE = "Aurora-M2 - All Tags";
 export const Tags_DESCRIPTION =
-  "AuroraLM - All tags and the count of articles related to each tag";
+  "Aurora-M2 - All tags and the count of articles related to each tag";
 
 // Tags Page Metadata, src/pages/tags/[tag]/[page].astro
 export function getTagMetadata(tag: string) {
   return {
-    title: `All articles on '${tag}' tag in AuroraLM`,
+    title: `All articles on '${tag}' tag in Aurora-M2`,
     description: `Explore articles about ${tag} for different perspectives and in-depth analysis.`,
   };
 }

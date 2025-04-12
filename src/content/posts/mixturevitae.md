@@ -10,7 +10,7 @@ tags:
 pubDate: 2025-04-12
 cover: https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/mixturevitae-logo.png
 coverAlt: Blue Bird Flash
-author: AuroraM Team
+author: Aurora-M2 Team
 ---
 **By: [Huu Nguyen](https://www.linkedin.com/in/huu-ai-machine-learning/), [Harsh Raj](hraj172.github.io), [Ken Tsui](https://www.linkedin.com/in/ken-tsui-06889b29/?originalSubdomain=uk), [Minh Chien Vu](https://scholar.google.com/citations?user=wcbZoCgAAAAJ&hl=en), [Diganta Misra](https://digantamisra98.github.io/), [Victor May](https://mrcabbage972.github.io/), [Marianna Nezhurina](https://scholar.google.ru/citations?user=2KPv4VYAAAAJ&hl=en), [Christoph Schuhmann](https://scholar.google.com/citations?user=EvrlaSAAAAAJ&hl=en), [Robert Kaczmarczyk](https://scholar.google.com/citations?user=qj7YcjcAAAAJ&hl=en) -- Apr 12, 2025**
 
