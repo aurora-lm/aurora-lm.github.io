@@ -5,11 +5,11 @@ description: "About Us"
 category:
   - One
 tags:
-  - AuroraLM
+  - Aurora-M
 pubDate: 2025-01-01
 cover: https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/aurora-lm-logo.png
 coverAlt: About Us
-author: AuroraLM Team
+author: Aurora-M Team
 ---
 
 AuroraLM is a collaborative effort led by open source collaborators especially [OntocordAI](https://www.ontocord.ai/) to create completely permissive AI stack for building Multimodal lanrge Language Models. Create a model and dataset aligned with the laws of nations and policies. Developing such a model opens doors for research into creating AI systems that comply with the laws and policies of specific nations, companies, and regions.
@@ -45,19 +45,19 @@ As part of our commitment to openness, we plan to open-source the entire trainin
     </td>
     <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
       <img 
-        src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/victor.jpg" 
-        width="100" 
-        style="display: block; margin: 0 auto; border-radius:50%;" 
-      /><br>
-      <strong><a href="https://mrcabbage972.github.io/">Victory May</a></strong><br>
-    </td>
-    <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
-      <img 
         src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/chien.jpg" 
         width="100" 
         style="display: block; margin: 0 auto; border-radius:50%;" 
       /><br>
       <strong><a href="https://scholar.google.com/citations?user=wcbZoCgAAAAJ&hl=en">Minh Chien Vu</a></strong><br>
+    </td>
+    <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
+      <img 
+        src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/victor.jpg" 
+        width="100" 
+        style="display: block; margin: 0 auto; border-radius:50%;" 
+      /><br>
+      <strong><a href="https://mrcabbage972.github.io/">Victory May</a></strong><br>
     </td>
   </tr>
 </tr>
