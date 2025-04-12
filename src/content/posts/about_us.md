@@ -12,8 +12,8 @@ coverAlt: About Us
 author: AuroraLM Team
 ---
 
-AuroraLM is a collaborative effort led by OntocordAI to create completely permissive AI stack for building Multimodal lanrge Language Models. Create a model and dataset aligned with the laws of nations and policies. Developing such a model opens doors for research into creating AI systems that comply with the laws and policies of specific nations, companies, and regions. This aligns with OntocordAI's mission to develop lawful and policy-compliant models.
-As part of our commitment to openness, we plan to open-source the entire training pipeline and experimental process—including data synthesis and the evolving methodologies we explore in model training.
+AuroraLM is a collaborative effort led by open source collaborators especially OntocordAI to create completely permissive AI stack for building Multimodal lanrge Language Models. Create a model and dataset aligned with the laws of nations and policies. Developing such a model opens doors for research into creating AI systems that comply with the laws and policies of specific nations, companies, and regions.
+As part of our commitment to openness, we plan to open-source the entire training pipeline and experimental process—including data synthesis and the evolving methodologies we explore in model training. Stay with us!
 
 ### Team
 
@@ -26,7 +26,6 @@ As part of our commitment to openness, we plan to open-source the entire trainin
         style="display: block; margin: 0 auto; border-radius:50%;" 
       /><br>
       <strong><a href="https://www.linkedin.com/in/huu-ai-machine-learning/">Huu Nguyen</a></strong><br>
-      <!-- <em>Data Lead</em> -->
     </td>
     <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
       <img 
@@ -35,7 +34,14 @@ As part of our commitment to openness, we plan to open-source the entire trainin
         style="display: block; margin: 0 auto; border-radius:50%;" 
       /><br>
       <strong><a href="https://harshraj172.github.io/">Harsh Raj</a></strong><br>
-      <!-- <em>Training Lead</em> -->
+    </td>
+    <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
+      <img 
+        src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/ken.jpg" 
+        width="100" 
+        style="display: block; margin: 0 auto; border-radius:50%;" 
+      /><br>
+      <strong><a href="https://github.com/kenhktsui">Ken Tsui</a></strong><br>
     </td>
     <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
       <img 
@@ -43,36 +49,16 @@ As part of our commitment to openness, we plan to open-source the entire trainin
         width="100" 
         style="display: block; margin: 0 auto; border-radius:50%;" 
       /><br>
-      <strong><a href="https://mrcabbage972.github.io/">Ken Tsui</a></strong><br>
-      <!-- <em>Training Lead</em> -->
-    <!-- </td>
+      <strong><a href="https://mrcabbage972.github.io/">Victory May</a></strong><br>
+    </td>
     <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
       <img 
-        src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/harsh.jpeg" 
+        src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/chien.jpg" 
         width="100" 
         style="display: block; margin: 0 auto; border-radius:50%;" 
       /><br>
-      <strong><a href="https://harshraj172.github.io/">Diganta Misra</a></strong><br>
-      <!-- <em>Training Lead</em> -->
-    <!-- </td>
-    <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
-      <img 
-        src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/harsh.jpeg" 
-        width="100" 
-        style="display: block; margin: 0 auto; border-radius:50%;" 
-      /><br>
-      <strong><a href="https://harshraj172.github.io/">Victory May</a></strong><br>
-      <!-- <em>Training Lead</em> -->
-    <!-- </td>
-    <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
-      <img 
-        src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/harsh.jpeg" 
-        width="100" 
-        style="display: block; margin: 0 auto; border-radius:50%;" 
-      /><br>
-      <strong><a href="https://harshraj172.github.io/">Vu Minh Chien</a></strong><br> -->
-      <!-- <em>Training Lead</em> -->
-    <!-- </td> --> --> -->
+      <strong><a href="https://scholar.google.com/citations?user=wcbZoCgAAAAJ&hl=en">Minh Chien Vu</a></strong><br>
+    </td>
   </tr>
 </tr>
 </table>
@@ -88,8 +74,8 @@ Members are funded by the [Berkeley Sky Computing ](https://sky.cs.berkeley.edu/
 ### Contact
 <!-- X: [@Ontocord](https://x.com/Ontocord) -->
 
-Email: huu@ontocord.ai
+Github: [AuroraLM](https://github.com/aurora-lm)
+X: [@Ontocord](https://x.com/Ontocord) 
+Email: huu@ontocord.ai, harsh@ontocord.ai
 
 <!-- Huggingface: [ontocord](https://huggingface.co/ontocord)
-
-Github: [ontocord](https://github.com/aurora-lm) -->
