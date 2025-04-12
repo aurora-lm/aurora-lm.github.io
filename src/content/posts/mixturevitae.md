@@ -20,7 +20,7 @@ author: AuroraM Team
 
 </div>
 
-Our blog is a way to share our journey with the wider community and is a living and organic document. We plan to update it continuously, alongside other posts on our site, as we further develop our data and models. In creating this dataset, we build on the work of industry giants such as Common Crawl, FineWeb, TxT360, Open License Corpus, Nemotron-CC, MAGAcorpus, Mint-PDF, and many others mentioned in the following sections.
+Our blog is a way to share our journey with the wider community and is a living and organic document. We plan to update it continuously, alongside other posts on our site, as we further develop our data and models. In creating this dataset, we build on the work of industry giants such as Common Crawl, FineWeb, TxT360, Open License Corpus, Nemotron-CC, MAGAcorpus, Mint-PDF, and many others mentioned in the following sections. 
 
 We curated permissive data through two primary avenues: first, by sourcing known public domain, out-of-copyright, or permissively licensed materials including text, video, and image data under licenses such as CC-BY-SA or open source software licenses; and second, by leveraging government websites that are more likely to fall under fair use, with our ethical and legal reasoning discussed in <u>Our Position For Using Governmental Works</u> section.
 
@@ -28,6 +28,7 @@ In total, we collected approximately 300 billion text tokens of copyright-permis
 
 Looking forward, we will shortly translate to multiple languages to reach 1T tokens. The token count will then be increased again by tokenizing the multimodal image and sound data.
 
+There is a common notion that permissive-only data does not yield stronger models. Recently, big tech companies have [suggested](https://www.theguardian.com/technology/2024/jan/08/ai-tools-chatgpt-copyrighted-material-openai) that stronger models aren't possible without copyrighted content. We challenge that assumption through careful curation, systematic ablations, and synthetic data generation.
 ## MixtureVitae
 MixtureVitae is a *carefully curated collection* of diverse, high-quality sources, designed from the ground up to lessen risk of copyright issues, and improve reliability, and diversity across domains and modalities.
 
@@ -63,8 +64,7 @@ TxT360: A comprehensive dataset that globally deduplicates 99 CommonCrawl snapsh
 - [COCO Captions](https://cocodataset.org/#home): We recaptioned the coco-2017 dataset, commonly used to develop models for multimodal understanding.
 - [OIG](https://huggingface.co/datasets/laion/OIG): We included certain subsets of the OIG dataset, rephrased with a LLM. Specifically, we incorporated the Unified SQL, Unified SKG, Abstract-Infil and Canadian Parliament subset of the OIG dataset. 
 - [Europarl](https://www.statmt.org/europarl/): A parallel corpus sourced from TxT360 extracted from the proceedings of the European Parliament, covering 21 European languages.
-- 10-K Filings (https://huggingface.co/datasets/aurora-m/aurora-m-dataset-part-1/tree/main/en) 
-- Aozora Bunko https://github.com/aozorabunko/ aozorabunko
+- **10-K Filings**: A dataset comprises a collection of 10-K filings, which are comprehensive annual reports filed by publicly traded companies to the U.S. Securities and Exchange Commission (SEC). These documents provide detailed insights into a company's financial performance, risk factors, and management discussions.
 - Atticus (https://huggingface.co/datasets/aurora-m/aurora-m-dataset-part-1/tree/main/en)
 - **Hackernews**: Sourced from OLC and TxT360, this dataset includes discussions and articles from the Hacker News platform.
 - **StackExchange**: A dataset comprising of publicly available data from the Stack Exchange network, including users’  questions, answers, comments, and associated metadata. We included RedPajamav1’s and TxT360’s Stack Exchange dataset, encompassing a wide range of topics from the Stack Exchange network.
