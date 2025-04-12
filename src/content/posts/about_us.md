@@ -12,7 +12,8 @@ coverAlt: About Us
 author: Aurora-M2 Team
 ---
 
-Aurora-M2 is a collaborative effort led by open source collaborators especially [OntocordAI](https://www.ontocord.ai/) to create completely permissive AI stack for building Multimodal lanrge Language Models. Create a model and dataset aligned with the laws of nations and policies. Developing such a model opens doors for research into creating AI systems that comply with the laws and policies of specific nations, companies, and regions.
+We are a group of volunteer researchers focused on equal access to multimodal and multilingual AI. We present a set of permissive stack for building Multimodal LLMs. The "-m" designation stands for multimodal, multilingual, multidomain mixture of expert (MOE) models, each of which we intend to research. As part of Ontocord.AI's dedication to lawful open science AI, Ontocord coordinated to this effort with the volunteers and contributed to the safety measures.
+
 As part of our commitment to openness, we plan to open-source the entire training pipeline and experimental process—including data synthesis and the evolving methodologies we explore in model training. Stay with us!
 
 ### Team
@@ -105,6 +106,6 @@ Github: [Aurora-M2](https://github.com/aurora-lm)
 
 X: [@Ontocord](https://x.com/Ontocord) 
 
-Email: huu@ontocord.ai, harsh@ontocord.ai
+Email: engage@ontocord.ai
 
 <!-- Huggingface: [ontocord](https://huggingface.co/ontocord)
