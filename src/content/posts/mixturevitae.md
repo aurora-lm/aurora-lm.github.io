@@ -22,7 +22,7 @@ author: AuroraM Team
 
 Our blog is a way to share our journey with the wider community and is a living and organic document. We plan to update it continuously, alongside other posts on our site, as we further develop our data and models. In creating this dataset, we build on the work of industry giants such as Common Crawl, FineWeb, TxT360, Open License Corpus, Nemotron-CC, MAGAcorpus, Mint-PDF, and many others mentioned in the following sections.
 
-We curated permissive data through two primary avenues: first, by sourcing known public domain, out-of-copyright, or permissively licensed materials including text, video, and image data under licenses such as CC-BY-SA or open source software licenses; and second, by leveraging government websites that are more likely to fall under fair use, with our ethical and legal reasoning discussed in “Our Position For Using Governmental Works” Section.
+We curated permissive data through two primary avenues: first, by sourcing known public domain, out-of-copyright, or permissively licensed materials including text, video, and image data under licenses such as CC-BY-SA or open source software licenses; and second, by leveraging government websites that are more likely to fall under fair use, with our ethical and legal reasoning discussed in <u>Our Position For Using Governmental Works</u> section.
 
 In total, we collected approximately 300 billion text tokens of copyright-permissive data from various open sources, enriched with high-quality synthetic data generated through our own pipelines. We refer to this curated dataset and methodology as MixtureVitae. 
 
