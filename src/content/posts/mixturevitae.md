@@ -70,12 +70,12 @@ TxT360: A comprehensive dataset that globally deduplicates 99 CommonCrawl snapsh
 - **Hackernews**: Sourced from OLC and TxT360, this dataset includes discussions and articles from the Hacker News platform.
 - **StackExchange**: A dataset comprising of publicly available data from the Stack Exchange network, including users’  questions, answers, comments, and associated metadata. We included RedPajamav1’s and TxT360’s Stack Exchange dataset, encompassing a wide range of topics from the Stack Exchange network.
 - [Openwebmath](https://huggingface.co/datasets/open-web-math/open-web-math): An open dataset of high-quality mathematical web text, containing 14.7 billion tokens extracted from mathematical webpages, intended for training language models in mathematical reasoning. We used the [I forget what is i called, but it is the 3+ subset I think]
-- Wikibooks
+<!-- - Wikibooks
 - Pubmed Abstracts from the Pile and TXT360
 - Pubmed Central from TXT 360
 - NIH from the Pile [NIH ExPorter](https://reporter.nih.gov/exporter)
 - Elsevier-oa open access papers https://huggingface.co/datasets/heegyu/elsevier-oa-cc-by
-- Clap: synthetic image captions for the clap dataset: https://huggingface.co/datasets/laion/clap-audio-data
+- Clap: synthetic image captions for the clap dataset: https://huggingface.co/datasets/laion/clap-audio-data -->
 - **arXiv Summaries**: Sourced from OLC, this dataset includes summaries of research papers from arXiv, facilitating research in scientific literature summarization.
 - **Wikipedia**: We included portions of Wikipedia from TxT360’s subset. To limit non-educational value documents, we filtered out articles about currently living persons, such as sports stars, or shorter articles, including those about sporting events, inspired by Phi-3 and 4’s work. Additionally, we included clustered Wikipedia articles based on minhash clustering for languages: English (en), Italian (it), Polish (pl), Swedish (sv), and Dutch (nl).
 - [Megawika](https://huggingface.co/datasets/hltcoe/megawika): A large-scale, multilingual, and cross-lingual dataset containing 30 million Wikipedia passages with their cleaned web citations in 50 languages. We used the original Wikipedia documents, select translations, and .gov web pages in this corpus, cleaning the content, aligning multilingual pairs, and appending relevant .gov webpages cited by Wikipedia. This results in a structured and contextualized knowledge base.
