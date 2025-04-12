@@ -59,6 +59,30 @@ As part of our commitment to openness, we plan to open-source the entire trainin
       /><br>
       <strong><a href="https://mrcabbage972.github.io/">Victory May</a></strong><br>
     </td>
+    <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
+      <img 
+        src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/marrianna.png" 
+        width="100" 
+        style="display: block; margin: 0 auto; border-radius:50%;" 
+      /><br>
+      <strong><a href="https://scholar.google.ru/citations?user=2KPv4VYAAAAJ&hl=en">Marianna Nezhurina</a></strong><br>
+    </td>
+    <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
+      <img 
+        src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/cristoph.png" 
+        width="100" 
+        style="display: block; margin: 0 auto; border-radius:50%;" 
+      /><br>
+      <strong><a href="https://scholar.google.com/citations?user=EvrlaSAAAAAJ&hl=en">Christoph Schuhmann</a></strong><br>
+    </td>
+    <td style="width: 25%; text-align: center; vertical-align: middle; height: 150px;">
+      <img 
+        src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/rob.png" 
+        width="100" 
+        style="display: block; margin: 0 auto; border-radius:50%;" 
+      /><br>
+      <strong><a href="https://scholar.google.com/citations?user=qj7YcjcAAAAJ&hl=en">Robert Kaczmarczyk</a></strong><br>
+    </td>
   </tr>
 </tr>
 </table>
