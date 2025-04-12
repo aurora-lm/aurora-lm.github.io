@@ -75,7 +75,9 @@ Members are funded by the [Berkeley Sky Computing ](https://sky.cs.berkeley.edu/
 <!-- X: [@Ontocord](https://x.com/Ontocord) -->
 
 Github: [AuroraLM](https://github.com/aurora-lm)
+
 X: [@Ontocord](https://x.com/Ontocord) 
+
 Email: huu@ontocord.ai, harsh@ontocord.ai
 
 <!-- Huggingface: [ontocord](https://huggingface.co/ontocord)
