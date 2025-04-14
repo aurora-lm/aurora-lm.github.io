@@ -78,7 +78,7 @@ As part of our commitment to openness, we plan to open-source the entire trainin
           class="circular-img" 
           alt="Diganta Misra" 
         /><br>
-        <strong><a href="https://scholar.google.com/citations?user=wcbZoCgAAAAJ&hl=en">Diganta Misra</a></strong>
+        <strong><a href="https://digantamisra98.github.io/">Diganta Misra</a></strong>
       </td>
       <td style="width: 16.66%; text-align: center; vertical-align: middle; height: 150px;">
         <img 
