@@ -204,12 +204,9 @@ Figure 2 demonstrates the performance of *meta-llama/Llama-3.2-3B* tuned with th
   <figcaption>Figure 2: Top: OpenLLM benchmark scores for the meta-llama/Llama-3.2-3B model fine-tuned with <em>AutoRedTeam</em> data. Bottom: ALERT evaluation scores for the same fine-tuned model.</figcaption>
 </figure>
 
-
-Figure 2: Top: OpenLLM benchmark scores for the *meta-llama/Llama-3.2-3B* model fine-tuned with AutoRedTeam data. Bottom: ALERT evaluation scores for the same fine-tuned model.
-
 These results clearly demonstrate that using redteaming samples generated from our AutoRedteam pipeline significantly improves model performance on safety benchmarks like ALERT, while maintaining strong general capabilities when appropriately mixed with helpfulness data.
 
-Our experiments validate that our fully synthetic AutoRedteam approach provides valuable and diverse data for effective LLM redteaming, offering a promising path forward for policy alignment here EU AI Act/ Safety.
+Our experiments validate that our fully synthetic AutoRedteam approach provides valuable and diverse data for effective LLM red teaming, offering a promising path forward for policy alignment with the EU AI Act and safety standards..
 
 ## Discussion and Future Works
 
