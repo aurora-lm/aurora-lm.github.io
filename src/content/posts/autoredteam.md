@@ -7,7 +7,7 @@ category:
 tags:
   - Autoredteam
 pubDate: 2025-04-24
-# cover: https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/mixturevitae-logo.png
+cover: https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/mixturevitae-logo.png
 coverAlt: Blue Bird Flash
 author: Aurora-M2 Team
 ---
