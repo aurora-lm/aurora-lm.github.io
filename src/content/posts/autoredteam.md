@@ -199,8 +199,8 @@ Figure 2 demonstrates the performance of *meta-llama/Llama-3.2-3B* tuned with th
 </figure>
 
 <figure>
-  <img src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/autoredteam/openllm-llama-3b-autoredteam.png" alt="OpenLLM benchmark scores for 3B model">
-  <img src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/autoredteam/alert-llama-3b-autoredteam.png" alt="ALERT evaluation scores for 3B model">
+  <img src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/autoredteam/openllm-llama-autoredteam-2.png" alt="OpenLLM benchmark scores for 3B model">
+  <img src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/autoredteam/alert-llama-autoredteam-2.png" alt="ALERT evaluation scores for 3B model">
   <figcaption>Figure 2: Top: OpenLLM benchmark scores for the meta-llama/Llama-3.2-3B model fine-tuned with <em>AutoRedTeam</em> data. Bottom: ALERT evaluation scores for the same fine-tuned model.</figcaption>
 </figure>
 
