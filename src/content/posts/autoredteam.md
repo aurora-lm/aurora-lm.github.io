@@ -1,5 +1,5 @@
 ---
-title: "AutoRedTeam: Policy-Based Multimodal multilingual Data Generation"
+title: "AutoRedTeam: Policy-Based Multimodal Multilingual Data Generation"
 slug: autoredteam
 description: "We introduce a novel pipeline for generating instructions to AutoRedteam a model for a specific policy, focusing on EU AI Act Annex III regulations for high-risk AI."
 category:
