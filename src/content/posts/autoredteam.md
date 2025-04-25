@@ -33,6 +33,12 @@ If the initial seed data lacks diversity, the model may start collapsing after a
 
 ## Method
 
+<figure>
+  <img src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/autoredteam/autoredteam-flow.png" alt="The process of Ontology based AutoRedTeaming">
+  <figcaption>The process of Ontology-based <em>AutoRedTeaming</em>.</figcaption>
+</figure>
+
+
 Just to reiterate on our goal for this project: goal of the AuroraM2 project is to create multimodal, multilingual, high permanent model which is aligned with the EU Ai Act. We introduce the real Autoredteam: A novel technique introduced for training AuroraM2, a scalable and automated instruction generation framework designed to ensure AI compliance with regulatory standards such as the EU AI Act specifically the EU AI Act High Risk Categories from Annexe III. 
 
 Unlike traditional human-curated datasets, AutoRedteam systematically generates, evaluates, and refines instruction-response pairs, improving both model helpfulness and safety in a controlled and targeted manner. Key Features of AutoRedteam include Ontology-Driven Instruction Generation, where a word-object ontology is used to create structured seed instructions covering explanations, reasoning tasks, creative prompts, adversarial cases, and ethical dilemmas, with contextual snippets integrated to enhance realism. 
