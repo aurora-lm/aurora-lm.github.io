@@ -1,0 +1,230 @@
+<!DOCTYPE html><html lang="en"> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/aurora-lm-logo.png"><meta name="generator" content="Astro v5.1.1"><!-- Canonical URL --><link rel="canonical" href="https://aurora-lm.github.io/posts/bts-aurora-m2/"><!-- Sitemap --><link rel="sitemap" href="/sitemap-index.xml"><!-- Primary Meta Tags --><title>Branch Train Stack (BTS) For the Aurora-M2 Pretrained Models</title><meta name="title" content="Branch Train Stack (BTS) For the Aurora-M2 Pretrained Models"><meta name="description" content="We introduce a novel Phased Training approach called Branch-Train-Stack that is highly efficient in terms of compute requirements while offering a simple process for debugging and data preparation."><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://aurora-lm.github.io/posts/bts-aurora-m2/"><meta property="og:title" content="Branch Train Stack (BTS) For the Aurora-M2 Pretrained Models"><meta property="og:description" content="We introduce a novel Phased Training approach called Branch-Train-Stack that is highly efficient in terms of compute requirements while offering a simple process for debugging and data preparation."><meta property="og:image" content="https://aurora-lm.github.io/blog-placeholder-1.avif"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://aurora-lm.github.io/posts/bts-aurora-m2/"><meta property="twitter:title" content="Branch Train Stack (BTS) For the Aurora-M2 Pretrained Models"><meta property="twitter:description" content="We introduce a novel Phased Training approach called Branch-Train-Stack that is highly efficient in terms of compute requirements while offering a simple process for debugging and data preparation."><meta property="twitter:image" content="https://aurora-lm.github.io/blog-placeholder-1.avif"><!-- Preline CSS --><script type="module" src="/_astro/BaseHead.astro_astro_type_script_index_0_lang.BtT675nX.js"></script><link rel="stylesheet" href="/_astro/_page_.a1X1-JMm.css">
+<style>[data-astro-image]{width:100%;height:auto;-o-object-fit:var(--fit);object-fit:var(--fit);-o-object-position:var(--pos);object-position:var(--pos);aspect-ratio:var(--w) / var(--h)}[data-astro-image=responsive]{max-width:calc(var(--w) * 1px);max-height:calc(var(--h) * 1px)}[data-astro-image=fixed]{width:calc(var(--w) * 1px);height:calc(var(--h) * 1px)}
+</style><script type="module" src="/_astro/page.DTIbhfSr.js"></script>
+<script>!(function(w,p,f,c){if(!window.crossOriginIsolated && !navigator.serviceWorker) return;c=w[p]=Object.assign(w[p]||{},{"lib":"/~partytown/","debug":false});c[f]=(c[f]||[]).concat(["dataLayer.push"])})(window,'partytown','forward');/* Partytown 0.10.2 - MIT builder.io */
+const t={preserveBehavior:!1},e=e=>{if("string"==typeof e)return[e,t];const[n,r=t]=e;return[n,{...t,...r}]},n=Object.freeze((t=>{const e=new Set;let n=[];do{Object.getOwnPropertyNames(n).forEach((t=>{"function"==typeof n[t]&&e.add(t)}))}while((n=Object.getPrototypeOf(n))!==Object.prototype);return Array.from(e)})());!function(t,r,o,i,a,s,c,d,l,p,u=t,f){function h(){f||(f=1,"/"==(c=(s.lib||"/~partytown/")+(s.debug?"debug/":""))[0]&&(l=r.querySelectorAll('script[type="text/partytown"]'),i!=t?i.dispatchEvent(new CustomEvent("pt1",{detail:t})):(d=setTimeout(v,1e4),r.addEventListener("pt0",w),a?y(1):o.serviceWorker?o.serviceWorker.register(c+(s.swPath||"partytown-sw.js"),{scope:c}).then((function(t){t.active?y():t.installing&&t.installing.addEventListener("statechange",(function(t){"activated"==t.target.state&&y()}))}),console.error):v())))}function y(e){p=r.createElement(e?"script":"iframe"),t._pttab=Date.now(),e||(p.style.display="block",p.style.width="0",p.style.height="0",p.style.border="0",p.style.visibility="hidden",p.setAttribute("aria-hidden",!0)),p.src=c+"partytown-"+(e?"atomics.js?v=0.10.2":"sandbox-sw.html?"+t._pttab),r.querySelector(s.sandboxParent||"body").appendChild(p)}function v(n,o){for(w(),i==t&&(s.forward||[]).map((function(n){const[r]=e(n);delete t[r.split(".")[0]]})),n=0;n<l.length;n++)(o=r.createElement("script")).innerHTML=l[n].innerHTML,o.nonce=s.nonce,r.head.appendChild(o);p&&p.parentNode.removeChild(p)}function w(){clearTimeout(d)}s=t.partytown||{},i==t&&(s.forward||[]).map((function(r){const[o,{preserveBehavior:i}]=e(r);u=t,o.split(".").map((function(e,r,o){var a;u=u[o[r]]=r+1<o.length?u[o[r]]||(a=o[r+1],n.includes(a)?[]:{}):(()=>{let e=null;if(i){const{methodOrProperty:n,thisObject:r}=((t,e)=>{let n=t;for(let t=0;t<e.length-1;t+=1)n=n[e[t]];return{thisObject:n,methodOrProperty:e.length>0?n[e[e.length-1]]:void 0}})(t,o);"function"==typeof n&&(e=(...t)=>n.apply(r,...t))}return function(){let n;return e&&(n=e(arguments)),(t._ptf=t._ptf||[]).push(o,arguments),n}})()}))})),"complete"==r.readyState?h():(t.addEventListener("DOMContentLoaded",h),t.addEventListener("load",h))}(window,document,navigator,top,window.crossOriginIsolated);;(e=>{e.addEventListener("astro:before-swap",e=>{let r=document.body.querySelector("iframe[src*='/~partytown/']");if(r)e.newDocument.body.append(r)})})(document);</script></head> <body class="flex flex-col min-h-screen mx-auto max-w-6xl px-4 dark:prose-invert sm:px-6 lg:px-8 dark:bg-neutral-900"> <header class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full py-7"> <nav class="relative max-w-7xl w-full flex flex-wrap md:grid md:grid-cols-12 basis-full items-center px-4 mx-auto" aria-label="Global"> <div class="md:col-span-3"> <a class="flex-none text-xl font-semibold text-neutral-900 hover:text-neutral-600 dark:text-neutral-400 dark:hover:text-neutral-200" href="/" aria-label="Astroverse"> Aurora-M2 </a> </div> <div class="flex items-center gap-x-2 ms-auto py-1 md:ps-6 md:order-3 md:col-span-3"> <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-xl border border-transparent text-black hover:bg-neutral-100 dark:text-white dark:hover:bg-neutral-700 transition disabled:opacity-50 disabled:pointer-events-none" onclick="window.location.href='/search/'"> <svg width="1em" height="1em" class="icon-base" data-icon="tabler:search">   <symbol id="ai:tabler:search" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0-14 0m18 11l-6-6"/></symbol><use href="#ai:tabler:search"></use>  </svg> </button> <button type="button" class="hs-dark-mode hs-dark-mode-active:hidden inline-flex items-center gap-x-2 py-2 px-3 rounded-full text-sm text-black hover:bg-white/20" data-hs-theme-click-value="dark"> <svg width="1em" height="1em" class="icon-base" data-icon="tabler:sun-filled">   <symbol id="ai:tabler:sun-filled" viewBox="0 0 24 24"><path fill="currentColor" d="M12 19a1 1 0 0 1 .993.883L13 20v1a1 1 0 0 1-1.993.117L11 21v-1a1 1 0 0 1 1-1m6.313-2.09l.094.083l.7.7a1 1 0 0 1-1.32 1.497l-.094-.083l-.7-.7a1 1 0 0 1 1.218-1.567zm-11.306.083a1 1 0 0 1 .083 1.32l-.083.094l-.7.7a1 1 0 0 1-1.497-1.32l.083-.094l.7-.7a1 1 0 0 1 1.414 0M4 11a1 1 0 0 1 .117 1.993L4 13H3a1 1 0 0 1-.117-1.993L3 11zm17 0a1 1 0 0 1 .117 1.993L21 13h-1a1 1 0 0 1-.117-1.993L20 11zM6.213 4.81l.094.083l.7.7a1 1 0 0 1-1.32 1.497l-.094-.083l-.7-.7A1 1 0 0 1 6.11 4.74zm12.894.083a1 1 0 0 1 .083 1.32l-.083.094l-.7.7a1 1 0 0 1-1.497-1.32l.083-.094l.7-.7a1 1 0 0 1 1.414 0M12 2a1 1 0 0 1 .993.883L13 3v1a1 1 0 0 1-1.993.117L11 4V3a1 1 0 0 1 1-1m0 5a5 5 0 1 1-4.995 5.217L7 12l.005-.217A5 5 0 0 1 12 7"/></symbol><use href="#ai:tabler:sun-filled"></use>  </svg> </button> <button type="button" class="hs-dark-mode hs-dark-mode-active:inline-flex hidden items-center gap-x-2 py-2 px-3 rounded-full text-sm text-white hover:bg-white/20" data-hs-theme-click-value="light"> <svg width="1em" height="1em" class="icon-base" data-icon="tabler:moon-filled">   <symbol id="ai:tabler:moon-filled" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1.992a10 10 0 1 0 9.236 13.838c.341-.82-.476-1.644-1.298-1.31a6.5 6.5 0 0 1-6.864-10.787l.077-.08c.551-.63.113-1.653-.758-1.653h-.266l-.068-.006z"/></symbol><use href="#ai:tabler:moon-filled"></use>  </svg> </button> <div class="md:hidden"> <button type="button" class="hs-collapse-toggle size-[38px] flex justify-center items-center text-sm font-semibold rounded-xl text-black hover:bg-neutral-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:hover:bg-neutral-700" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation"> <svg width="1em" height="1em" class="hs-collapse-open:hidden flex-shrink-0 size-4" data-icon="tabler:menu-2">   <symbol id="ai:tabler:menu-2" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></symbol><use href="#ai:tabler:menu-2"></use>  </svg> <svg width="1em" height="1em" class="hs-collapse-open:block hidden flex-shrink-0 size-4" data-icon="tabler:menu-order">   <symbol id="ai:tabler:menu-order" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 10h16M4 14h16M9 18l3 3l3-3M9 6l3-3l3 3"/></symbol><use href="#ai:tabler:menu-order"></use>  </svg> </button> </div> </div> <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow md:block md:w-auto md:basis-auto md:order-2 md:col-span-6"> <div class="flex flex-col gap-y-4 gap-x-0 mt-5 md:flex-row md:justify-center md:items-center md:gap-y-0 md:gap-x-7 md:mt-0"> <a href="/posts/about-us/" class="px-4 py-3 font-medium text-neutral-900 hover:text-neutral-600 dark:text-neutral-400 dark:hover:text-neutral-200"> About Us </a><a href="/category/One/1/" class="px-4 py-3 font-medium text-neutral-900 hover:text-neutral-600 dark:text-neutral-400 dark:hover:text-neutral-200"> Blog Posts </a><a href="/tags/" class="px-4 py-3 font-medium text-neutral-900 hover:text-neutral-600 dark:text-neutral-400 dark:hover:text-neutral-200"> Sort by Tags </a> </div> </div> </nav> </header> <main class="flex-grow">  <main> <article class="prose mx-auto dark:prose-invert"> <div class="prose-h1 text-center"> <h1>Branch Train Stack (BTS) For the Aurora-M2 Pretrained Models</h1> </div> <div> <picture> <source srcset="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/bts/bts-logo.png 392w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/bts/bts-logo.png 700w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/bts/bts-logo.png 980w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/bts/bts-logo.png 1960w" type="image/avif" sizes="(max-width: 360px) 392px, 
+           (max-width: 720px) 700px, 
+           (max-width: 1600px) 980px, 
+           1960px">  <img src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/bts/bts-logo.png" srcset="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/bts/bts-logo.png 392w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/bts/bts-logo.png 700w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/bts/bts-logo.png 980w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/bts/bts-logo.png 1960w" alt="Branch Train Stack Diagram" sizes="(max-width: 360px) 392px, 
+           (max-width: 720px) 700px, 
+           (max-width: 1600px) 980px, 
+           1960px" width="1024" height="1024" loading="lazy" decoding="async" class="mx-auto w-full max-w-full rounded-lg"> </picture> </div> <div> <p><strong>By: <a href="https://www.linkedin.com/in/huu-ai-machine-learning/">Huu Nguyen</a>, <a href="hraj172.github.io">Harsh Raj</a>, <a href="https://www.linkedin.com/in/ken-tsui-06889b29/?originalSubdomain=uk">Ken Tsui</a>, <a href="https://scholar.google.com/citations?user=wcbZoCgAAAAJ&#x26;hl=en">Minh Chien Vu</a>, <a href="https://www.ml.informatik.tu-darmstadt.de/people/ffriedrich/index.html">Felix Friedrich</a>, <a href="https://digantamisra98.github.io/">Diganta Misra</a>, <a href="https://mrcabbage972.github.io/">Victor May</a>, <a href="https://scholar.google.ru/citations?user=2KPv4VYAAAAJ&#x26;hl=en">Marianna Nezhurina</a>, <a href="https://scholar.google.com/citations?user=EvrlaSAAAAAJ&#x26;hl=en">Christoph Schuhmann</a>, <a href="https://scholar.google.com/citations?user=qj7YcjcAAAAJ&#x26;hl=en">Robert Kaczmarczyk</a> — Apr 28, 2025</strong></p>
+<div align="center">
+<p><strong>Huggingface:</strong> <a href="https://huggingface.co/ontocord" style="color: #1f6feb;" target="_blank"><strong>Aurora-M2</strong></a></p>
+</div>
+<h2 id="introduction">Introduction</h2>
+<p>For training Aurora-M2, we introduce a novel Phased Training approach that is highly efficient in terms of compute requirements while offering a simple process for debugging and data preparation throughout the training process.</p>
+<h2 id="phased-training">Phased Training</h2>
+<p>We are adopting a phased approach to training. Our strategy for AuroraM-2 aims to achieve multiple objectives simultaneously: high data quality, expert specialization, and scalable performance across various parameter regimes (3B, 8B, and 20B), all while using significantly less compute than conventional large-scale models.​</p>
+<p>We propose a novel training scheme optimized for low-resource environments and infrastructures with limited inter-node connectivity. As the proverb goes, necessity is the mother of invention; we devised this process to address our compute constraints. This approach, which we call Branch-Train-Stack (BTS), is inspired by prior <a href="https://arxiv.org/abs/2208.03306">work</a> from Meta AI but introduces key innovations tailored for our context.</p>
+<h2 id="the-branch-train-stack-process">The Branch-Train-Stack Process</h2>
+<p>The process can be broken down into several key stages:</p>
+<h3 id="initialization">Initialization</h3>
+<p>In our <a href="https://aurora-lm.github.io/posts/mixturevitae">previous blog</a> we collected the dataset, MixtureVitae: A Permissive, High-Performance, Open-Access Pretraining Dataset. We sample chunks from this dataset across our training process.</p>
+<p>Our process begins with training an initial seed model—a 3-billion-parameter model initialized from scratch based on the <em>Qwen2.5-3B</em> architecture. We sample roughly 5 billion heterogeneous tokens from MixtureVitae to serve as the base dataset for the seed model. Early experiments involve training several mixtures derived from MixtureVitae and evaluating them to select the best-performing model. For initial validation, we utilize 5 billion tokens for training at each stage. However, the training pipeline has been scaled to accommodate 20 billion tokens per stage per expert.</p>
+<p>The base model is then evaluated against the teacher model (<em>Qwen2.5-3B</em>) to assess its performance. In this approach, we simulate a student-teacher learning scenario, where the model under training acts as the student—a method that has shown success in works like <a href="https://arxiv.org/abs/2401.15670">YODA</a>. To align the student model with the teacher during the pretraining stage, we perform preference optimization using Odds Ratio Preference Optimization (ORPO). This involves generating preference pairs, with the student’s response as the rejected pair and the teacher’s response as the preferred pair. We chose ORPO as the preference optimization algorithm because it combines instruction tuning and preference alignment into a single process, making it efficient and well-suited during pretraining.</p>
+<figure>
+  <img src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/bts/bts-flow.png" alt="Branch Train Stack Process">
+  <figcaption>The Branch-Train-Stack (BTS) process.</figcaption>
+</figure>
+<p>Inspired by prior <a href="https://arxiv.org/abs/2302.08582">works</a>, we perform alignment during pretraining to instill desired behaviors early, rather than addressing misalignments during post-training. Specifically, we use an in-house data synthesis pipeline to create synthetic instructions that incorporate EU AI Act policies into the model. Our targeted data generation pipeline allows us to adjust the data mix to focus on areas where the student model underperforms, thereby improving performance in a scientifically grounded manner. This novel data synthesis pipeline generates data from scratch in a fully controlled way; we will discuss it in more detail in later sections.</p>
+<h3 id="branch-train-stack">Branch-Train-Stack</h3>
+<p>After training the seed model, we branch the training into 8 specialized expert models, each initialized from the base model. For our final training experiment, we plan to use 20 experts, with curated data spanning 20 diverse categories. These models are trained separately on domain-specific datasets (e.g., business, fiction, math, medical/health), with a data composition of 50% heterogeneous data and 50% expert-specific data.</p>
+<p>Within the heterogeneous portion, we intentionally repeat some data from earlier training stages to minimize unexpected distribution drift. While these numbers were chosen for the initial test, we are still experimenting with the ratio and repetition rate for training. The training is conducted independently for each expert model, ensuring specialization without intercommunication between branches. This approach significantly reduces compute requirements and the need for high-speed inter-node communication between large node clusters.</p>
+<p>After training, all eight models are merged to form a new base model. Inspired by state-of-the-art work, we employed the <a href="https://arxiv.org/abs/2306.01708">DARE-TIES</a> merging algorithm with a density of 0.9 and assigned a weight of 0.05 to each merged model. While we initially chose equal weighting for each expert, we plan to conduct further ablation studies to optimize these parameters. This iterative process is repeated, progressively refining the model by integrating both general and specialized knowledge over multiple training cycles.</p>
+<p>When scaling to larger models, we adopt a progressive stacking approach. After the first two iterations—training on approximately 8×5 + 5 = 45 billion tokens—we perform the first stacking, creating an 8-billion-parameter model. This stacking process is derived from previous <a href="https://arxiv.org/abs/2405.15319">works</a> on model stacking. In our final training phase, we plan to train each expert on 20 billion tokens during each stage. We will stack the 3-billion-parameter model after 9 iterations of BTS to create an 8-billion-parameter model, and then stack again after 5 more iterations to create a 20-billion-parameter model.</p>
+<p>During the 8B and 20B phases, we introduce early exits from the 3B and 8B checkpoints to compute supplementary autoregressive loss, ensuring robust performance across different compute regimes (3B, 8B, and 20B). Additionally, if at any point the student model surpasses the cumulative accuracy of its teacher, we upgrade to a better teacher (a larger model from the same family). In such cases, rejected and chosen responses are generated from the student and teacher, respectively, to continue preference optimization training.</p>
+<h2 id="preliminary-results">Preliminary Results</h2>
+<p>We conducted a series of ablation studies to assess the viability of our proposed training scheme. Table 2 presents the results from the initial phase and the expert phase up to two iterations, including the outcomes of the stacking model after these iterations. All evaluations were performed using Hugging Face’s Lighteval framework, with the exception of HumanEval, which was done using BigCodeBench.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Stage</th><th>Expert</th><th>HumanEval (pass@100)</th><th>GSM8K (lighteval)</th><th>GSM8k (lm_eval)</th><th>ARC Challenge</th><th>Winogrande</th><th>MMLU</th><th>Hellaswag</th></tr></thead><tbody><tr><td>0</td><td>init</td><td>0</td><td>0</td><td>0.0235</td><td>0.2448</td><td>0.5067</td><td>0.2543</td><td>0.2966</td></tr><tr><td>1</td><td>wiki</td><td>0</td><td>0</td><td>0.0243</td><td>0.2448</td><td>0.5082</td><td>0.2542</td><td>0.2964</td></tr><tr><td>1</td><td>formatted_text</td><td>0</td><td>0</td><td>0.0288</td><td>0.2474</td><td>0.5161</td><td>0.2499</td><td>0.3123</td></tr><tr><td>1</td><td>how_to</td><td>0.0223</td><td>0</td><td>0.0152</td><td>0.2457</td><td>0.4932</td><td>0.2468</td><td>0.3342</td></tr><tr><td>1</td><td>law</td><td>0.0219</td><td>0</td><td>0.0182</td><td>0.2542</td><td>0.4988</td><td>0.2556</td><td>0.3105</td></tr><tr><td>1</td><td>news</td><td>0.0304</td><td>0.0015</td><td>0.0121</td><td>0.2482</td><td>0.5051</td><td>0.2545</td><td>0.3156</td></tr><tr><td>1</td><td>software</td><td>0.0162</td><td>0</td><td>0.0212</td><td>0.2372</td><td>0.5177</td><td>0.2524</td><td>0.3068</td></tr><tr><td>1</td><td>fictional_lyrical</td><td>0.0115</td><td>0</td><td>0.0182</td><td>0.2525</td><td>0.5114</td><td>0.2478</td><td>0.3147</td></tr><tr><td>1</td><td>math</td><td>0.0805</td><td>0.0007</td><td>0.0356</td><td>0.2602</td><td>0.5098</td><td>0.2587</td><td>0.3154</td></tr><tr><td>1</td><td>merged</td><td>0.0558</td><td>0.0015</td><td>0.0182</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>2</td><td>fictional_lyrical</td><td>0</td><td>0</td><td>0.0174</td><td>0.2576</td><td>0.5177</td><td>0.2446</td><td>0.324</td></tr><tr><td>2</td><td>math</td><td>0.0758</td><td>0</td><td>0.0318</td><td>0.25</td><td>0.509</td><td>0.2546</td><td>0.3143</td></tr><tr><td>3</td><td>math_stacked</td><td>0</td><td>-</td><td>-</td><td>0.2542</td><td>0.5059</td><td>0.2531</td><td>0.3202</td></tr></tbody></table>
+<p><em>Table 2: Preliminary results of BTS training across different phases and experts.</em></p>
+<p>For evaluation, we selected tasks commonly used for assessing small language models, such as those employed in SmolLM evaluations. These tasks are relatively less complex than current standards, providing early indicators of improvement during initial training stages. At this early stage, we do not anticipate the model to have acquired extensive world knowledge or factual information, as such competencies typically require more extensive training.</p>
+<p>However, we expect evaluation results for math and code tasks to show an increasing trend, as these are relatively logic-oriented tasks rather than reliant on memorization. This expectation aligns with our observed results. The results indicate that our pipeline is effective, showing improvements in model scores, particularly for logic, code, and math-related tasks—areas often considered primary indicators of learning progress.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>The Branch-Train-Stack (BTS) approach offers a promising and efficient method for training large language models with limited computational resources. By leveraging specialized expert models and progressive scaling, we can build powerful models that perform well across various parameter regimes while maintaining high quality and efficiency.</p>
+<p>Our preliminary results demonstrate the effectiveness of this approach, and we continue to refine and optimize our training process. Stay tuned for more updates as we progress through our training phases and reach our final 20B model.</p>
+<h2 id="citation">Citation</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bibtex"><code><span class="line"><span style="color:#F97583">@misc</span><span style="color:#E1E4E8">{</span><span style="color:#B392F0">bts_aurora_2025</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">  author</span><span style="color:#E1E4E8">       = </span><span style="color:#9ECBFF">{</span><span style="color:#E1E4E8">Huu Nguyen, Harsh Raj, Ken Tsui, Vu Minh Chien, Felix Friedrich, Diganta Misra, Victor May, Marianna Nezhurina, Christoph Schuhmann, Robert Kaczmarczyk</span><span style="color:#9ECBFF">}</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">  title</span><span style="color:#E1E4E8">        = </span><span style="color:#9ECBFF">{</span><span style="color:#E1E4E8">Branch Train Stack (BTS) For the Aurora-M2 Pretrained Models</span><span style="color:#9ECBFF">}</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">  howpublished</span><span style="color:#E1E4E8"> = </span><span style="color:#9ECBFF">{</span><span style="color:#E1E4E8">https://aurora-lm.github.io/posts/bts-aurora-m2</span><span style="color:#9ECBFF">}</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">  note</span><span style="color:#E1E4E8">         = </span><span style="color:#9ECBFF">{</span><span style="color:#E1E4E8">Accessed: 2025-04-28</span><span style="color:#9ECBFF">}</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">  year</span><span style="color:#E1E4E8">         = </span><span style="color:#9ECBFF">{</span><span style="color:#E1E4E8">2025</span><span style="color:#9ECBFF">}</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre> </div> <div class="prose-a:no-underline"> <span class="mb-2 mr-2 inline-block rounded-full bg-neutral-200 px-3 py-1 text-sm hover:bg-neutral-500 dark:bg-neutral-600"> <a href="/tags/Training/1/">Training</a> </span><span class="mb-2 mr-2 inline-block rounded-full bg-neutral-200 px-3 py-1 text-sm hover:bg-neutral-500 dark:bg-neutral-600"> <a href="/tags/Efficiency/1/">Efficiency</a> </span> </div> <div class="flex justify-between"> <small>Publish on <span>2025-04-28</span>，Update on <span>2025-04-28</span></small> </div> </article> <div class="mt-4"> <div class="grid grid-cols-1 gap-4 md:grid-cols-3"> <div class="relative mb-4 overflow-hidden rounded-xl bg-white transition-transform duration-500 hover:-translate-y-1 hover:scale-105 dark:bg-neutral-900"> <a href="/posts/autoredteam/"> <picture> <source srcset="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/autoredteam/EU_AI_Act.png 392w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/autoredteam/EU_AI_Act.png 700w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/autoredteam/EU_AI_Act.png 980w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/autoredteam/EU_AI_Act.png 1960w" type="image/avif" sizes="(max-width: 360px) 392px, 
+           (max-width: 720px) 700px, 
+           (max-width: 1600px) 980px, 
+           1960px">  <img src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/autoredteam/EU_AI_Act.png" srcset="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/autoredteam/EU_AI_Act.png 392w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/autoredteam/EU_AI_Act.png 700w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/autoredteam/EU_AI_Act.png 980w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/autoredteam/EU_AI_Act.png 1960w" alt="Blue Bird Flash" sizes="(max-width: 360px) 392px, 
+           (max-width: 720px) 700px, 
+           (max-width: 1600px) 980px, 
+           1960px" width="1024" height="1024" loading="lazy" decoding="async" class="mx-auto w-full max-w-full rounded-lg"> </picture> <div class="absolute bottom-0 end-0 start-0 bg-gradient-to-t p-4 md:p-5"> <div class="mt-16 flex items-center gap-4 text-xs text-white"> <span>Autoredteam</span> <span>2025-04-24</span> </div> <h2 class="mt-2 text-lg font-bold text-white">AutoRedTeam: Policy-Based Multimodal Multilingual Data Generation</h2> </div> </a> </div><div class="relative mb-4 overflow-hidden rounded-xl bg-white transition-transform duration-500 hover:-translate-y-1 hover:scale-105 dark:bg-neutral-900"> <a href="/posts/mixturevitae/"> <picture> <source srcset="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/mixturevitae-logo.png 392w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/mixturevitae-logo.png 700w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/mixturevitae-logo.png 980w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/mixturevitae-logo.png 1960w" type="image/avif" sizes="(max-width: 360px) 392px, 
+           (max-width: 720px) 700px, 
+           (max-width: 1600px) 980px, 
+           1960px">  <img src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/mixturevitae-logo.png" srcset="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/mixturevitae-logo.png 392w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/mixturevitae-logo.png 700w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/mixturevitae-logo.png 980w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/mixturevitae-logo.png 1960w" alt="Blue Bird Flash" sizes="(max-width: 360px) 392px, 
+           (max-width: 720px) 700px, 
+           (max-width: 1600px) 980px, 
+           1960px" width="1024" height="1024" loading="lazy" decoding="async" class="mx-auto w-full max-w-full rounded-lg"> </picture> <div class="absolute bottom-0 end-0 start-0 bg-gradient-to-t p-4 md:p-5"> <div class="mt-16 flex items-center gap-4 text-xs text-white"> <span>Pre-Training Permissive-Data</span> <span>2025-04-12</span> </div> <h2 class="mt-2 text-lg font-bold text-white">MixtureVitae: A Permissive, High-Performance, Open-Access Pretraining Dataset</h2> </div> </a> </div><div class="relative mb-4 overflow-hidden rounded-xl bg-white transition-transform duration-500 hover:-translate-y-1 hover:scale-105 dark:bg-neutral-900"> <a href="/posts/about-us/"> <picture> <source srcset="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/aurora-lm-logo.png 392w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/aurora-lm-logo.png 700w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/aurora-lm-logo.png 980w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/aurora-lm-logo.png 1960w" type="image/avif" sizes="(max-width: 360px) 392px, 
+           (max-width: 720px) 700px, 
+           (max-width: 1600px) 980px, 
+           1960px">  <img src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/aurora-lm-logo.png" srcset="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/aurora-lm-logo.png 392w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/aurora-lm-logo.png 700w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/aurora-lm-logo.png 980w, https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/aurora-lm-logo.png 1960w" alt="About Us" sizes="(max-width: 360px) 392px, 
+           (max-width: 720px) 700px, 
+           (max-width: 1600px) 980px, 
+           1960px" width="1024" height="1024" loading="lazy" decoding="async" class="mx-auto w-full max-w-full rounded-lg"> </picture> <div class="absolute bottom-0 end-0 start-0 bg-gradient-to-t p-4 md:p-5"> <div class="mt-16 flex items-center gap-4 text-xs text-white"> <span>Aurora-M2</span> <span>2025-01-01</span> </div> <h2 class="mt-2 text-lg font-bold text-white">About Us</h2> </div> </a> </div> </div> </div> </main>  </main> <footer class="mt-auto w-full max-w-[85rem] py-10 mx-auto"> <nav class="mx-auto w-full max-w-[85rem] px-4" aria-label="Footer"> <div class="flex flex-col items-center sm:flex-row sm:justify-between"> <div id="navbar-alignment" class="internal-links sm:order-2"> <div class="mt-2 flex flex-row gap-5 sm:mt-0 sm:flex-row sm:items-center sm:ps-5"> <a href="https://www.ontocord.ai/" class="inline-flex gap-x-2 text-sm text-neutral-500 hover:text-neutral-800 dark:text-neutral-500 dark:hover:text-neutral-200"> OntocordAI </a> </div> </div> <div class="mt-2 flex flex-wrap gap-2 sm:order-3 sm:mb-0 sm:gap-0"> <button type="button" class="relative inline-flex h-12 w-12 items-center gap-x-2 bg-white px-4 py-3 text-neutral-500 hover:text-neutral-800 disabled:pointer-events-none disabled:opacity-50  dark:text-neutral-500 dark:hover:text-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-900"> <a href="https://x.com/ontocord" class="absolute inset-0 z-10" aria-label="Twitter"></a> <svg width="1em" height="1em" class="icon-base" data-icon="tabler:brand-twitter">   <symbol id="ai:tabler:brand-twitter" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 4.01c-1 .49-1.98.689-3 .99c-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4c0 0-4.182 7.433 4 11c-1.872 1.247-3.739 2.088-6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58-1.04 6.522-3.723 7.651-7.742a13.8 13.8 0 0 0 .497-3.753c0-.249 1.51-2.772 1.818-4.013z"/></symbol><use href="#ai:tabler:brand-twitter"></use>  </svg> </button><button type="button" class="relative inline-flex h-12 w-12 items-center gap-x-2 bg-white px-4 py-3 text-neutral-500 hover:text-neutral-800 disabled:pointer-events-none disabled:opacity-50  dark:text-neutral-500 dark:hover:text-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-900"> <a href="https://github.com/aurora-lm" class="absolute inset-0 z-10" aria-label="GitHub"></a> <svg width="1em" height="1em" class="icon-base" data-icon="tabler:brand-github">   <symbol id="ai:tabler:brand-github" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6c-.6.6-.6 1.2-.5 2V21"/></symbol><use href="#ai:tabler:brand-github"></use>  </svg> </button><button type="button" class="relative inline-flex h-12 w-12 items-center gap-x-2 bg-white px-4 py-3 text-neutral-500 hover:text-neutral-800 disabled:pointer-events-none disabled:opacity-50  dark:text-neutral-500 dark:hover:text-neutral-200 dark:bg-neutral-900 dark:hover:bg-neutral-900"> <a href="https://discord.gg/RBAjeWSA" class="absolute inset-0 z-10" aria-label="Discord"></a> <svg width="1em" height="1em" class="icon-base" data-icon="tabler:brand-discord">   <symbol id="ai:tabler:brand-discord" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0-2 0m6 0a1 1 0 1 0 2 0a1 1 0 0 0-2 0"/><path d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833-1.667 3.5-3c.667-1.667.5-5.833-1.5-11.5c-1.457-1.015-3-1.34-4.5-1.5l-.972 1.923a11.9 11.9 0 0 0-4.053 0L9 4c-1.5.16-3.043.485-4.5 1.5c-2 5.667-2.167 9.833-1.5 11.5c.667 1.333 2 3 3.5 3c.5 0 2-2 2-3"/><path d="M7 16.5c3.5 1 6.5 1 10 0"/></g></symbol><use href="#ai:tabler:brand-discord"></use>  </svg> </button> </div> <div class="mt-2 sm:order-1 sm:mb-0"> <a class="flex-none text-sm text-neutral-500 hover:text-neutral-800 dark:text-neutral-500 dark:hover:text-neutral-200" href="/" aria-label="Brand">Aurora-M2 &copy; 2025</a> </div> </div> </nav> </footer> </body></html>
