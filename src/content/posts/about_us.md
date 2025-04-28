@@ -114,6 +114,14 @@ As part of our commitment to openness, we plan to open-source the entire trainin
         /><br>
         <strong><a href="https://scholar.google.com/citations?user=qj7YcjcAAAAJ&hl=en">Robert Kaczmarczyk</a></strong>
       </td>
+      <td style="width: 33.33%; text-align: center; vertical-align: middle; height: 150px;">
+        <img 
+          src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/about_us/jenia.jpeg" 
+          class="circular-img" 
+          alt="Jenia Jitsev" 
+        /><br>
+        <strong><a href="https://www.linkedin.com/in/jenia-jitsev-11654427/?originalSubdomain=de">Jenia Jitsev</a></strong>
+      </td>
     </tr>
   </table>
 </body>

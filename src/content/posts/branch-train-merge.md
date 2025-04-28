@@ -96,7 +96,7 @@ Our preliminary results demonstrate the effectiveness of this approach, and we c
 ## Citation
 ```bibtex
 @misc{bts_aurora_2025,
-  author       = {Huu Nguyen, Harsh Raj, Ken Tsui, Vu Minh Chien, Felix Friedrich, Diganta Misra, Victor May, Marianna Nezhurina, Christoph Schuhmann, Robert Kaczmarczyk},
+  author       = {Huu Nguyen, Harsh Raj, Ken Tsui, Vu Minh Chien, Felix Friedrich, Diganta Misra, Victor May, Marianna Nezhurina},
   title        = {Branch Train Stack (BTS) For the Aurora-M2 Pretrained Models},
   howpublished = {https://aurora-lm.github.io/posts/bts-aurora-m2},
   note         = {Accessed: 2025-04-28},

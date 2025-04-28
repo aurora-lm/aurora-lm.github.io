@@ -158,7 +158,7 @@ This is an evolving blog, so check back in from time to time to get updates and 
 ## Citation
 ```bibtex
 @misc{mixturevitae_2025,
-  author       = {Huu Nguyen, Harsh Raj, Ken Tsui, Diganta Misra, Victor May, Vu Minh Chien},
+  author       = {Huu Nguyen, Harsh Raj, Ken Tsui, Diganta Misra, Victor May, Vu Minh Chien, Jenia Jitsev},
   title        = {MixtureVitae: A Permissive, High-Performance, Open-Access Pretraining Dataset},
   howpublished = {https://aurora-lm.github.io/posts/mixturevitae},
   note         = {Accessed: 2025-04-12},
