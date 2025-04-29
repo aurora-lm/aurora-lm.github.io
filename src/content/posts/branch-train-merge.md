@@ -47,7 +47,7 @@ The base model is then evaluated against the teacher model (*Qwen2.5-3B*) to ass
   <figcaption>The Branch-Train-Stack (BTS) process.</figcaption>
 </figure>
 
-Inspired by prior [works](https://arxiv.org/abs/2302.08582), we perform alignment during pretraining to instill desired behaviors early, rather than addressing misalignments during post-training. Specifically, we use an in-house data synthesis pipeline to create synthetic instructions that incorporate EU AI Act policies into the model. Our targeted data generation pipeline allows us to adjust the data mix to focus on areas where the student model underperforms, thereby improving performance in a scientifically grounded manner. This novel data synthesis pipeline generates data from scratch in a fully controlled way; we will discuss it in more detail in later sections.
+Inspired by prior [works](https://arxiv.org/abs/2302.08582), we perform alignment during pretraining to instill desired behaviors early, rather than addressing misalignments during post-training. Specifically, we use an in-house data synthesis pipeline to create synthetic instructions that incorporate EU AI Act policies into the model. Our targeted data generation pipeline allows us to adjust the data mix to focus on areas where the student model underperforms, thereby improving performance. This novel data synthesis pipeline generates data from scratch in a fully controlled way; we discuss it in more detail in our [AutoRedTeam blog](https://aurora-lm.github.io/posts/autoredteam/).
 
 ### Branch-Train-Stack
 
@@ -59,11 +59,9 @@ After training, all eight models are merged to form a new base model. Inspired b
 
 When scaling to larger models, we adopt a progressive stacking approach. After the first two iterations—training on approximately 8×5 + 5 = 45 billion tokens—we perform the first stacking, creating an 8-billion-parameter model. This stacking process is derived from previous [works](https://arxiv.org/abs/2405.15319) on model stacking. In our final training phase, we plan to train each expert on 20 billion tokens during each stage. We will stack the 3-billion-parameter model after 9 iterations of BTS to create an 8-billion-parameter model, and then stack again after 5 more iterations to create a 20-billion-parameter model.
 
-During the 8B and 20B phases, we introduce early exits from the 3B and 8B checkpoints to compute supplementary autoregressive loss, ensuring robust performance across different compute regimes (3B, 8B, and 20B). Additionally, if at any point the student model surpasses the cumulative accuracy of its teacher, we upgrade to a better teacher (a larger model from the same family). In such cases, rejected and chosen responses are generated from the student and teacher, respectively, to continue preference optimization training.
-
 ## Preliminary Results
 
-We conducted a series of ablation studies to assess the viability of our proposed training scheme. Table 2 presents the results from the initial phase and the expert phase up to two iterations, including the outcomes of the stacking model after these iterations. All evaluations were performed using Hugging Face's Lighteval framework, with the exception of HumanEval, which was done using BigCodeBench.
+We conducted a series of ablation studies to assess the viability of our proposed training scheme. **For the preliminary experiments and validation, we only used 5B training tokens at each stage**. Table 2 presents the results from the initial phase and the expert phase up to two iterations, including the outcomes of the stacking model after these iterations. All evaluations were performed using Hugging Face's Lighteval framework, with the exception of HumanEval, which was done using BigCodeBench.
 
 | Stage | Expert | HumanEval (pass@100) | GSM8K (lighteval) | GSM8k (lm_eval) | ARC Challenge | Winogrande | MMLU | Hellaswag |
 |-------|--------|----------------------|-------------------|-----------------|---------------|------------|------|-----------|

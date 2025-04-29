@@ -12,7 +12,7 @@ cover: https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/asse
 coverAlt: Blue Bird Flash
 author: Aurora-M2 Team
 ---
-**By: [Huu Nguyen](https://www.linkedin.com/in/huu-ai-machine-learning/), [Harsh Raj](hraj172.github.io), [Ken Tsui](https://www.linkedin.com/in/ken-tsui-06889b29/?originalSubdomain=uk), [Minh Chien Vu](https://scholar.google.com/citations?user=wcbZoCgAAAAJ&hl=en), [Diganta Misra](https://digantamisra98.github.io/), [Victor May](https://mrcabbage972.github.io/), [Marianna Nezhurina](https://scholar.google.ru/citations?user=2KPv4VYAAAAJ&hl=en), [Christoph Schuhmann](https://scholar.google.com/citations?user=EvrlaSAAAAAJ&hl=en), [Robert Kaczmarczyk](https://scholar.google.com/citations?user=qj7YcjcAAAAJ&hl=en) -- Apr 12, 2025**
+**By: [Huu Nguyen](https://www.linkedin.com/in/huu-ai-machine-learning/), [Harsh Raj](hraj172.github.io), [Ken Tsui](https://www.linkedin.com/in/ken-tsui-06889b29/?originalSubdomain=uk), [Minh Chien Vu](https://scholar.google.com/citations?user=wcbZoCgAAAAJ&hl=en), [Diganta Misra](https://digantamisra98.github.io/), [Victor May](https://mrcabbage972.github.io/), [Marianna Nezhurina](https://scholar.google.ru/citations?user=2KPv4VYAAAAJ&hl=en), [Christoph Schuhmann](https://scholar.google.com/citations?user=EvrlaSAAAAAJ&hl=en), [Robert Kaczmarczyk](https://scholar.google.com/citations?user=qj7YcjcAAAAJ&hl=en), [Andrej Radonjic](https://x.com/0xdrej?lang=en), [Jenia Jitsev](https://www.linkedin.com/in/jenia-jitsev-11654427/?originalSubdomain=de) -- Apr 12, 2025**
 
 <div align="center">
 
@@ -158,7 +158,7 @@ This is an evolving blog, so check back in from time to time to get updates and 
 ## Citation
 ```bibtex
 @misc{mixturevitae_2025,
-  author       = {Huu Nguyen, Harsh Raj, Ken Tsui, Diganta Misra, Victor May, Vu Minh Chien, Jenia Jitsev},
+  author       = {Huu Nguyen, Harsh Raj, Ken Tsui, Diganta Misra, Victor May, Vu Minh Chien, Andrej Radonjic, Jenia Jitsev},
   title        = {MixtureVitae: A Permissive, High-Performance, Open-Access Pretraining Dataset},
   howpublished = {https://aurora-lm.github.io/posts/mixturevitae},
   note         = {Accessed: 2025-04-12},
