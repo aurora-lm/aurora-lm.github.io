@@ -12,7 +12,7 @@ cover: https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/asse
 coverAlt: Blue Bird Flash
 author: Aurora-M2 Team
 ---
-**By: [Huu Nguyen](https://www.linkedin.com/in/huu-ai-machine-learning/), [Harsh Raj](hraj172.github.io), [Ken Tsui](https://www.linkedin.com/in/ken-tsui-06889b29/?originalSubdomain=uk), [Minh Chien Vu](https://scholar.google.com/citations?user=wcbZoCgAAAAJ&hl=en), [Diganta Misra](https://digantamisra98.github.io/), [Victor May](https://mrcabbage972.github.io/), [Marianna Nezhurina](https://scholar.google.ru/citations?user=2KPv4VYAAAAJ&hl=en), [Christoph Schuhmann](https://scholar.google.com/citations?user=EvrlaSAAAAAJ&hl=en), [Robert Kaczmarczyk](https://scholar.google.com/citations?user=qj7YcjcAAAAJ&hl=en), [Andrej Radonjic](https://x.com/0xdrej?lang=en), [Jenia Jitsev](https://www.linkedin.com/in/jenia-jitsev-11654427/?originalSubdomain=de) -- Apr 12, 2025**
+**By: [Huu Nguyen](https://www.linkedin.com/in/huu-ai-machine-learning/), [Harsh Raj](https://harshraj172.github.io/), [Ken Tsui](https://www.linkedin.com/in/ken-tsui-06889b29/?originalSubdomain=uk), [Minh Chien Vu](https://scholar.google.com/citations?user=wcbZoCgAAAAJ&hl=en), [Diganta Misra](https://digantamisra98.github.io/), [Victor May](https://mrcabbage972.github.io/), [Marianna Nezhurina](https://scholar.google.ru/citations?user=2KPv4VYAAAAJ&hl=en), [Christoph Schuhmann](https://scholar.google.com/citations?user=EvrlaSAAAAAJ&hl=en), [Robert Kaczmarczyk](https://scholar.google.com/citations?user=qj7YcjcAAAAJ&hl=en), [Andrej Radonjic](https://x.com/0xdrej?lang=en), [Jenia Jitsev](https://www.linkedin.com/in/jenia-jitsev-11654427/?originalSubdomain=de) -- Apr 12, 2025**
 
 <div align="center">
 
