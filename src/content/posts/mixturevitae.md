@@ -12,7 +12,7 @@ cover: https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/asse
 coverAlt: Blue Bird Flash
 author: Aurora-M2 Team
 ---
-**By: [Huu Nguyen](https://www.linkedin.com/in/huu-ai-machine-learning/), [Harsh Raj](https://harshraj172.github.io/), [Ken Tsui](https://www.linkedin.com/in/ken-tsui-06889b29/?originalSubdomain=uk), [Minh Chien Vu](https://scholar.google.com/citations?user=wcbZoCgAAAAJ&hl=en), [Diganta Misra](https://digantamisra98.github.io/), [Victor May](https://mrcabbage972.github.io/), [Marianna Nezhurina](https://scholar.google.ru/citations?user=2KPv4VYAAAAJ&hl=en), [Christoph Schuhmann](https://scholar.google.com/citations?user=EvrlaSAAAAAJ&hl=en), [Robert Kaczmarczyk](https://scholar.google.com/citations?user=qj7YcjcAAAAJ&hl=en), [Andrej Radonjic](https://x.com/0xdrej?lang=en), [Jenia Jitsev](https://www.linkedin.com/in/jenia-jitsev-11654427/?originalSubdomain=de) -- Apr 12, 2025**
+**By: [Huu Nguyen](https://www.linkedin.com/in/huu-ai-machine-learning/), [Harsh Raj](https://harshraj172.github.io/), [Ken Tsui](https://www.linkedin.com/in/ken-tsui-06889b29/?originalSubdomain=uk), [Minh Chien Vu](https://scholar.google.com/citations?user=wcbZoCgAAAAJ&hl=en), [Sonny Vu](https://scholar.google.com/citations?user=kFY-kEUAAAAJ&hl=en), [Diganta Misra](https://digantamisra98.github.io/), [Victor May](https://mrcabbage972.github.io/), [Marianna Nezhurina](https://scholar.google.ru/citations?user=2KPv4VYAAAAJ&hl=en), [Christoph Schuhmann](https://scholar.google.com/citations?user=EvrlaSAAAAAJ&hl=en), [Robert Kaczmarczyk](https://scholar.google.com/citations?user=qj7YcjcAAAAJ&hl=en), [Andrej Radonjic](https://x.com/0xdrej?lang=en), [Jenia Jitsev](https://www.linkedin.com/in/jenia-jitsev-11654427/?originalSubdomain=de) -- Apr 12, 2025**
 
 <div align="center">
 
@@ -39,7 +39,7 @@ The main portion of the dataset can be found at [HuggingFace](https://huggingfac
 We filtered, collated, reorganized and included data from various open corpora, and we created our own original data using synthetic data generation techniques. The corpus spans a rich variety of open datasets, curated datasets, and synthetic generations.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/pie-chart.jpg" alt="Proportions of Open Web, Curated, and Synthetic Dataset in MixtureVitae">
+  <img src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/pie-chart.png" alt="Proportions of Open Web, Curated, and Synthetic Dataset in MixtureVitae">
   <figcaption>Figure 1: The proportions of Open Web, Curated, and Synthetic Dataset in <em>MixtureVitae</em>.</figcaption>
 </figure>
 
@@ -97,6 +97,9 @@ Additionally, We include widely-used open source and permissive post-training da
 - [OpenManus-RL](https://huggingface.co/datasets/CharlieDreemur/OpenManus-RL): Combines agent trajectories from [AgentInstruct](https://huggingface.co/datasets/THUDM/AgentInstruct), [Agent-FLAN](https://huggingface.co/datasets/internlm/Agent-FLAN), and [AgentTraj-L](https://huggingface.co/datasets/AgentGym/AgentTraj-L) (AgentGym) with key features including the [ReAct](https://react-lm.github.io/) prompting framework, structured training (separate format and reasoning learning), and anti-hallucination techniques (negative samples and environment grounding). Covers six domains: Operating Systems, Databases, Web, Knowledge Graphs, Household, and E-commerce.
 
 #### Synthetic Data
+
+A large portion of our dataset is composed of synthetic data, intertwined and interleaved with organic data. For example, a large portion of our web datasets comes from [nemotron-cc](https://arxiv.org/abs/2412.02595) which is mostly synthetic data, and we have also curated synthetic translations from sources such as [Megawiki](https://huggingface.co/datasets/hltcoe/megawika). 
+
 - **Multiple-Choice Question (MCQ) Generation**: We generate multiple-choice questions (MCQs) derived from rich knowledge sources such as GenericsKB, as well as abstract infill templates from the [OIG dataset](https://laion.ai/blog/oig-dataset/). These MCQs are intended to promote the ability to answer multiple choice questions.
 - **Synthetic Stories**: We generated synthetic stories similar to [TinyStories](https://huggingface.co/datasets/roneneldan/TinyStories), based on datasets like [Atomic 2024](https://huggingface.co/datasets/ontocord/atomic_2024), and select portions of the [PG-19](https://huggingface.co/datasets/deepmind/pg19) dataset.
 - **Mathematical Generation**:​ 
@@ -104,6 +107,7 @@ Additionally, We include widely-used open source and permissive post-training da
   - We also create synthetic math questions and answers to teach basic math as well.
 - **Instruction Generation**: The instruction generation pipeline creates structured instructions, stories, and data analysis summaries, similar to Ultra-Magpie from [SmolLM](https://arxiv.org/abs/2502.02737v1), but without editing instructions. 
 
+Overall, the datasets is composed of roughly 20-30% synthetic data, with that percentage growing after we have completed translations and additional multimodal generation. We expect that a major portion of MixtureVitae will then be synthetic.
 
 <figure>
   <img src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/flow.png" alt="The process of filtering and compiling MixtureVitae">

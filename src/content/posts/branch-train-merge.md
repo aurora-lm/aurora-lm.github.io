@@ -12,7 +12,7 @@ cover: https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/asse
 coverAlt: Branch Train Stack Diagram
 author: Aurora-M2 Team
 ---
-**By: [Huu Nguyen](https://www.linkedin.com/in/huu-ai-machine-learning/), [Harsh Raj](hraj172.github.io), [Ken Tsui](https://www.linkedin.com/in/ken-tsui-06889b29/?originalSubdomain=uk), [Minh Chien Vu](https://scholar.google.com/citations?user=wcbZoCgAAAAJ&hl=en), [Felix Friedrich](https://www.ml.informatik.tu-darmstadt.de/people/ffriedrich/index.html), [Diganta Misra](https://digantamisra98.github.io/), [Victor May](https://mrcabbage972.github.io/), [Marianna Nezhurina](https://scholar.google.ru/citations?user=2KPv4VYAAAAJ&hl=en) -- Apr 28, 2025**
+**By: [Huu Nguyen](https://www.linkedin.com/in/huu-ai-machine-learning/), [Harsh Raj](hraj172.github.io), [Ken Tsui](https://www.linkedin.com/in/ken-tsui-06889b29/?originalSubdomain=uk), [Minh Chien Vu](https://scholar.google.com/citations?user=wcbZoCgAAAAJ&hl=en), [Felix Friedrich](https://www.ml.informatik.tu-darmstadt.de/people/ffriedrich/index.html), [Sonny Vu](https://scholar.google.com/citations?user=kFY-kEUAAAAJ&hl=en), [Diganta Misra](https://digantamisra98.github.io/), [Marianna Nezhurina](https://scholar.google.ru/citations?user=2KPv4VYAAAAJ&hl=en), [Victor May](https://mrcabbage972.github.io/) -- Apr 28, 2025**
 
 <div align="center">
 
@@ -57,7 +57,7 @@ Within the heterogeneous portion, we intentionally repeat some data from earlier
 
 After training, all eight models are merged to form a new base model. Inspired by state-of-the-art work, we employed the [DARE-TIES](https://arxiv.org/abs/2306.01708) merging algorithm with a density of 0.9 and assigned a weight of 0.05 to each merged model. While we initially chose equal weighting for each expert, we plan to conduct further ablation studies to optimize these parameters. This iterative process is repeated, progressively refining the model by integrating both general and specialized knowledge over multiple training cycles.
 
-When scaling to larger models, we adopt a progressive stacking approach. After the first two iterations—training on approximately 8×5 + 5 = 45 billion tokens—we perform the first stacking, creating an 8-billion-parameter model. This stacking process is derived from previous [works](https://arxiv.org/abs/2405.15319) on model stacking. In our final training phase, we plan to train each expert on 20 billion tokens during each stage. We will stack the 3-billion-parameter model after 9 iterations of BTS to create an 8-billion-parameter model, and then stack again after 5 more iterations to create a 20-billion-parameter model.
+When scaling to larger models, we adopt a progressive stacking approach. After the first two iterations—training on approximately 8×5 + 5 = 45 billion tokens—we perform the first stacking, creating an 8-billion-parameter model. This stacking process is derived from previous [works](https://arxiv.org/abs/2405.15319) on model stacking. In our final training phase, we plan to train each expert on 20 billion tokens during each stage. We will stack the 3-billion-parameter model after 9 iterations of BTS to create an 8-billion-parameter model, and then stack again after 5 more iterations to create a 20-billion-parameter model, and then train for one more iteration.
 
 ## Preliminary Results
 
@@ -90,6 +90,8 @@ However, we expect evaluation results for math and code tasks to show an increas
 The Branch-Train-Stack (BTS) approach offers a promising and efficient method for training large language models with limited computational resources. By leveraging specialized expert models and progressive scaling, we can build powerful models that perform well across various parameter regimes while maintaining high quality and efficiency.
 
 Our preliminary results demonstrate the effectiveness of this approach, and we continue to refine and optimize our training process. Stay tuned for more updates as we progress through our training phases and reach our final 20B model.
+
+Looking forward, we foresee more optimization opportunities in improving the serving performance. For instance, [DeltaMoE](<https://openreview.net/forum?id=FJ7Z8H6elV&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2025%2FWorkshop%2FSLLM%2FAuthors%23your-submissions>) proposes compressing the deltas in each expert, leading to improved efficiency and performance. We believe that BTS has the potential to deliver benefits not only in training but also in the efficient deployment and serving of large models.
 
 ## Citation
 ```bibtex
