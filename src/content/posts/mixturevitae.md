@@ -40,7 +40,7 @@ We filtered, collated, reorganized and included data from various open corpora, 
 
 <figure>
   <img src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/mixturevitae/pie-chart.png" alt="Proportions of Open Web, Curated, and Synthetic Dataset in MixtureVitae">
-  <figcaption>Figure 1: The proportions of Open Web, Curated, and Synthetic Dataset in <em>MixtureVitae</em>.</figcaption>
+  <figcaption>Figure 1: The proportions of Open Web, Curated, and Synthetic Dataset in <em>MixtureVitae</em>. Since both the Open Web and Curated datasets contain some synthetic data, we estimated the proportions excluding synthetic content (indicated as "w/o synthetic") and grouped all synthetic portions into the Synthetic dataset category.</figcaption>
 </figure>
 
 #### Web Based Open Datasets
@@ -98,7 +98,7 @@ Additionally, We include widely-used open source and permissive post-training da
 
 #### Synthetic Data
 
-A large portion of our dataset is composed of synthetic data, intertwined and interleaved with organic data. For example, a large portion of our web datasets comes from [nemotron-cc](https://arxiv.org/abs/2412.02595) which is mostly synthetic data, and we have also curated synthetic translations from sources such as [Megawiki](https://huggingface.co/datasets/hltcoe/megawika). 
+A large portion of our dataset is composed of synthetic data, intertwined and interleaved with organic data. For example, a large portion of our web datasets comes from [nemotron-cc](https://arxiv.org/abs/2412.02595) which is mostly synthetic data, and we have also curated synthetic translations from sources such as [Megawiki](https://huggingface.co/datasets/hltcoe/megawika). The pie chart in Figure 1 illustrates the distribution of data, where we estimated the proportions excluding synthetic content and grouped all synthetic portions into the Synthetic dataset category.
 
 - **Multiple-Choice Question (MCQ) Generation**: We generate multiple-choice questions (MCQs) derived from rich knowledge sources such as GenericsKB, as well as abstract infill templates from the [OIG dataset](https://laion.ai/blog/oig-dataset/). These MCQs are intended to promote the ability to answer multiple choice questions.
 - **Synthetic Stories**: We generated synthetic stories similar to [TinyStories](https://huggingface.co/datasets/roneneldan/TinyStories), based on datasets like [Atomic 2024](https://huggingface.co/datasets/ontocord/atomic_2024), and select portions of the [PG-19](https://huggingface.co/datasets/deepmind/pg19) dataset.
