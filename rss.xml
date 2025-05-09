@@ -190,17 +190,6 @@ If relevant context is available—or if a user provides specific context—it i
 
 This involves cleaning existing textual data and breaking it into usable chunks, which are then prepended or appended to the instruction. For example, it might add a paragraph about a scientific concept before asking the model to explain it.
 
-**Predefined Template Dictionaries** - The Autoredteam ontology creation begins with predefined verb object mappings that form the foundation of the knowledge structure. Typically this is similar to wordnet which maps entities to related entities w.r.t. language structure. We define multiple object and verb mappings that organize different types of entities and actions. For example: categories for skills contain job skills like &quot;critical thinking skills&quot;, &quot;problem solving skills&quot; or verb &quot;harmful actions related to disease&quot; contains actions like &quot;spreading&quot;, &quot;culturing&quot;, &quot;infecting others with&quot;. These mappings create a structured taxonomy where concepts are organized by type, providing the raw materials for generating diverse instructions. 
-
-**Semantic Matching Rules** - We ensure that only meaningful combinations of verbs and objects are used. Like:
-- Extracts meaningful words from both the verb type and object type (filtering out stopwords and common terms)
-- Handle special cases (e.g., if &quot;children,&quot; &quot;figures,&quot; or &quot;adults&quot; appear, add &quot;people&quot; to the object list) 
-- Checks if any object type word appears within the verb type (indicating compatibility). 
-
-For example, If object type is &quot;science_subjects&quot; and verb_type is &quot;communication_with_science&quot;, the filtered object words might be [&quot;science&quot;, &quot;subjects&quot;] and the filtered verb words might be [&quot;communication&quot;, &quot;science&quot;]. Since &quot;science&quot; appears in both lists, these would be deemed compatible.
-
-**Instruction Creation** - It is the heart of the Autoredteam&apos;s ontology system. This process combines verb types (actions) and object types (subjects) to ensure both semantic coherence. First it, checks that the verb type and object type are compatible then selects verbs and objects from respective predefined templates and then combine them by choosing from a varied list of instruction types and formats. It is upsamping the verb and object pairs using conditional clauses and some predefined templates. For example, if the verb type is &quot;communication&quot; and the object type is &quot;science&quot;, it might generate instructions like &quot;Explain quantum physics&quot; or &quot;Describe scientific principles.&quot;, We create varied types of formats for instructions like instructions with choosing options, or instructions in different tones.
-
 ## Systematic Upsampling
 
 After creating basic instructions using the ontology-driven approach, the Autoredteam pipeline uses upsampling to increase the diversity of the dataset. This process transforms basic instructions into more varied and adversarial forms that better test the model. We use several techniques for this:
