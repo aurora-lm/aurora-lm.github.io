@@ -77,6 +77,8 @@ We conducted a series of ablation studies to assess the viability of our propose
 
 *Table 2: Preliminary results of BTS training across different phases and experts.*
 
+We experimented to confirm if branch train and merging was effective. We find that indeed after merging the model does not forget it&apos;s previous skills. We also tested to see if stacking would have an adverse effect. As noted in the literature, stacking initially decreases performance but not substantially. The model&apos;s performance should recover and improve with additional training. 
+
 For evaluation, we selected tasks commonly used for assessing small language models, such as those employed in SmolLM evaluations. These tasks are relatively less complex than current standards, providing early indicators of improvement during initial training stages. At this early stage, we do not anticipate the model to have acquired extensive world knowledge or factual information, as such competencies typically require more extensive training. 
 
 However, we expect evaluation results for math and code tasks to show an increasing trend, as these are relatively logic-oriented tasks rather than reliant on memorization. This expectation aligns with our observed results. The results indicate that our pipeline is effective, showing improvements in model scores, particularly for logic, code, and math-related tasks—areas often considered primary indicators of learning progress.
