@@ -86,7 +86,7 @@ We conducted a series of ablation studies to assess the viability of our propose
 | 1 | math | 0.0805 | 0.0356 |  0.2602 | 0.5098 | 0.2587 | 0.3154 |
 | 1 | merged | 0.0558 |  0.0182 | - | - | - | - |
 | 2 | fictional_lyrical | 0 |  0.0174 | 0.2576 | 0.5177 | 0.2446 | 0.324 |
-| 2 | math | 0.0758 | 0 |  0.25 | 0.509 | 0.2546 | 0.3143 |
+| 2 | math | 0.0758 |- |  0.25 | 0.509 | 0.2546 | 0.3143 |
 | 3 | math_stacked | 0 | - | 0.2542 | 0.5059 | 0.2531 | 0.3202 |
 
 *Table 2: Preliminary results of BTS training across different phases and experts.*
