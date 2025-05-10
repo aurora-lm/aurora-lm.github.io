@@ -73,21 +73,21 @@ Thus the goal is to train large models of up to 20B active parameters, while usi
 
 We conducted a series of ablation studies to assess the viability of our proposed training scheme. **For the preliminary experiments and validation, we only used 5B training tokens at each stage**. Table 2 presents the results from the initial phase and the expert phase up to two iterations, including the outcomes of the stacking model after these iterations. All evaluations were performed using Hugging Face's Lighteval framework, with the exception of HumanEval, which was done using BigCodeBench.
 
-| Stage | Expert | HumanEval (pass@100) | GSM8K (lighteval) | GSM8k (lm_eval) | ARC Challenge | Winogrande | MMLU | Hellaswag |
+| Stage | Expert | HumanEval (pass@100) | GSM8k (lm_eval) | ARC Challenge | Winogrande | MMLU | Hellaswag |
 |-------|--------|----------------------|-------------------|-----------------|---------------|------------|------|-----------|
-| 0 | init | 0 | 0 | 0.0235 | 0.2448 | 0.5067 | 0.2543 | 0.2966 |
-| 1 | wiki | 0 | 0 | 0.0243 | 0.2448 | 0.5082 | 0.2542 | 0.2964 |
-| 1 | formatted_text | 0 | 0 | 0.0288 | 0.2474 | 0.5161 | 0.2499 | 0.3123 |
-| 1 | how_to | 0.0223 | 0 | 0.0152 | 0.2457 | 0.4932 | 0.2468 | 0.3342 |
-| 1 | law | 0.0219 | 0 | 0.0182 | 0.2542 | 0.4988 | 0.2556 | 0.3105 |
-| 1 | news | 0.0304 | 0.0015 | 0.0121 | 0.2482 | 0.5051 | 0.2545 | 0.3156 |
-| 1 | software | 0.0162 | 0 | 0.0212 | 0.2372 | 0.5177 | 0.2524 | 0.3068 |
-| 1 | fictional_lyrical | 0.0115 | 0 | 0.0182 | 0.2525 | 0.5114 | 0.2478 | 0.3147 |
-| 1 | math | 0.0805 | 0.0007 | 0.0356 | 0.2602 | 0.5098 | 0.2587 | 0.3154 |
-| 1 | merged | 0.0558 | 0.0015 | 0.0182 | - | - | - | - |
-| 2 | fictional_lyrical | 0 | 0 | 0.0174 | 0.2576 | 0.5177 | 0.2446 | 0.324 |
-| 2 | math | 0.0758 | 0 | 0.0318 | 0.25 | 0.509 | 0.2546 | 0.3143 |
-| 3 | math_stacked | 0 | - | - | 0.2542 | 0.5059 | 0.2531 | 0.3202 |
+| 0 | init | 0 |  0.0235 | 0.2448 | 0.5067 | 0.2543 | 0.2966 |
+| 1 | wiki | 0 | 0.0243 | 0.2448 | 0.5082 | 0.2542 | 0.2964 |
+| 1 | formatted_text |  0 | 0.0288 | 0.2474 | 0.5161 | 0.2499 | 0.3123 |
+| 1 | how_to | 0.0223 |  0.0152 | 0.2457 | 0.4932 | 0.2468 | 0.3342 |
+| 1 | law | 0.0219 |  0.0182 | 0.2542 | 0.4988 | 0.2556 | 0.3105 |
+| 1 | news | 0.0304 |  0.0121 | 0.2482 | 0.5051 | 0.2545 | 0.3156 |
+| 1 | software | 0.0162 | 0.0212 | 0.2372 | 0.5177 | 0.2524 | 0.3068 |
+| 1 | fictional_lyrical | 0.0115 | 0.0182 | 0.2525 | 0.5114 | 0.2478 | 0.3147 |
+| 1 | math | 0.0805 | 0.0007 |  0.2602 | 0.5098 | 0.2587 | 0.3154 |
+| 1 | merged | 0.0558 |  0.0182 | - | - | - | - |
+| 2 | fictional_lyrical | 0 |  0.0174 | 0.2576 | 0.5177 | 0.2446 | 0.324 |
+| 2 | math | 0.0758 | 0 |  0.25 | 0.509 | 0.2546 | 0.3143 |
+| 3 | math_stacked | 0 | - | 0.2542 | 0.5059 | 0.2531 | 0.3202 |
 
 *Table 2: Preliminary results of BTS training across different phases and experts.*
 
