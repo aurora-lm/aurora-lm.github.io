@@ -41,166 +41,21 @@ const t={preserveBehavior:!1},e=e=>{if("string"==typeof e)return[e,t];const[n,r=
 <p>Thus the goal is to train large models of up to 20B active parameters, while using a fraction of the compute - the gains coming from the BTM and stacking method. Additionally, similar to the BTX architecture, the experts can be used as MoE layers, thus creating models of > 200B parameters. This work, is to the best of our knowledge the first combination of known methods for efficient training - BTM -> BTX -> Stacking, which will produce efficiently trained and high performing models.</p>
 <h2 id="preliminary-results">Preliminary Results</h2>
 <p>We conducted a series of ablation studies to assess the viability of our proposed training scheme. <strong>For the preliminary experiments and validation, we only used 5B training tokens at each stage</strong>. Table 2 presents the results from the initial phase and the expert phase up to two iterations, including the outcomes of the stacking model after these iterations. All evaluations were performed using Hugging Face’s Lighteval framework, with the exception of HumanEval, which was done using BigCodeBench.</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>Stage</th><th>Expert</th><th>HumanEval (pass@100)</th><th>GSM8K (lighteval)</th><th>GSM8k (lm_eval)</th><th>ARC Challenge</th><th>Winogrande</th><th>MMLU</th><th>Hellaswag</th></tr></thead><tbody><tr><td>0</td><td>init</td><td>0</td><td>0</td><td>0.0235</td><td>0.2448</td><td>0.5067</td><td>0.2543</td><td>0.2966</td></tr><tr><td>1</td><td>wiki</td><td>0</td><td>0</td><td>0.0243</td><td>0.2448</td><td>0.5082</td><td>0.2542</td><td>0.2964</td></tr><tr><td>1</td><td>formatted_text</td><td>0</td><td>0</td><td>0.0288</td><td>0.2474</td><td>0.5161</td><td>0.2499</td><td>0.3123</td></tr><tr><td>1</td><td>how_to</td><td>0.0223</td><td>0</td><td>0.0152</td><td>0.2457</td><td>0.4932</td><td>0.2468</td><td>0.3342</td></tr><tr><td>1</td><td>law</td><td>0.0219</td><td>0</td><td>0.0182</td><td>0.2542</td><td>0.4988</td><td>0.2556</td><td>0.3105</td></tr><tr><td>1</td><td>news</td><td>0.0304</td><td>0.0015</td><td>0.0121</td><td>0.2482</td><td>0.5051</td><td>0.2545</td><td>0.3156</td></tr><tr><td>1</td><td>software</td><td>0.0162</td><td>0</td><td>0.0212</td><td>0.2372</td><td>0.5177</td><td>0.2524</td><td>0.3068</td></tr><tr><td>1</td><td>fictional_lyrical</td><td>0.0115</td><td>0</td><td>0.0182</td><td>0.2525</td><td>0.5114</td><td>0.2478</td><td>0.3147</td></tr><tr><td>1</td><td>math</td><td>0.0805</td><td>0.0007</td><td>0.0356</td><td>0.2602</td><td>0.5098</td><td>0.2587</td><td>0.3154</td></tr><tr><td>1</td><td>merged</td><td>0.0558</td><td>0.0015</td><td>0.0182</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td>2</td><td>fictional_lyrical</td><td>0</td><td>0</td><td>0.0174</td><td>0.2576</td><td>0.5177</td><td>0.2446</td><td>0.324</td></tr><tr><td>2</td><td>math</td><td>0.0758</td><td>0</td><td>0.0318</td><td>0.25</td><td>0.509</td><td>0.2546</td><td>0.3143</td></tr><tr><td>3</td><td>math_stacked</td><td>0</td><td>-</td><td>-</td><td>0.2542</td><td>0.5059</td><td>0.2531</td><td>0.3202</td></tr></tbody></table>
+<p>| Stage | Expert | HumanEval (pass@100) | GSM8k (lm_eval) | ARC Challenge | Winogrande | MMLU | Hellaswag |
+|-------|--------|----------------------|-------------------|-----------------|---------------|------------|------|-----------|
+| 0 | init | 0 |  0.0235 | 0.2448 | 0.5067 | 0.2543 | 0.2966 |
+| 1 | wiki | 0 | 0.0243 | 0.2448 | 0.5082 | 0.2542 | 0.2964 |
+| 1 | formatted_text |  0 | 0.0288 | 0.2474 | 0.5161 | 0.2499 | 0.3123 |
+| 1 | how_to | 0.0223 |  0.0152 | 0.2457 | 0.4932 | 0.2468 | 0.3342 |
+| 1 | law | 0.0219 |  0.0182 | 0.2542 | 0.4988 | 0.2556 | 0.3105 |
+| 1 | news | 0.0304 |  0.0121 | 0.2482 | 0.5051 | 0.2545 | 0.3156 |
+| 1 | software | 0.0162 | 0.0212 | 0.2372 | 0.5177 | 0.2524 | 0.3068 |
+| 1 | fictional_lyrical | 0.0115 | 0.0182 | 0.2525 | 0.5114 | 0.2478 | 0.3147 |
+| 1 | math | 0.0805 | 0.0007 |  0.2602 | 0.5098 | 0.2587 | 0.3154 |
+| 1 | merged | 0.0558 |  0.0182 | - | - | - | - |
+| 2 | fictional_lyrical | 0 |  0.0174 | 0.2576 | 0.5177 | 0.2446 | 0.324 |
+| 2 | math | 0.0758 | 0 |  0.25 | 0.509 | 0.2546 | 0.3143 |
+| 3 | math_stacked | 0 | - | 0.2542 | 0.5059 | 0.2531 | 0.3202 |</p>
 <p><em>Table 2: Preliminary results of BTS training across different phases and experts.</em></p>
 <p>For evaluation, we selected tasks commonly used for assessing small language models, such as those employed in SmolLM evaluations. These tasks are relatively less complex than current standards, providing early indicators of improvement during initial training stages. At this early stage, we do not anticipate the model to have acquired extensive world knowledge or factual information, as such competencies typically require more extensive training.</p>
 <p>However, we expect evaluation results for math and code tasks to show an increasing trend, as these are relatively logic-oriented tasks rather than reliant on memorization. This expectation aligns with our observed results. The results indicate that our pipeline is effective, showing improvements in model scores, particularly for logic, code, and math-related tasks—areas often considered primary indicators of learning progress.</p>
