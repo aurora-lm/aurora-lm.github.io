@@ -60,7 +60,7 @@ Thus the goal is to train large models of up to 20B active parameters, while usi
 We conducted a series of ablation studies to assess the viability of our proposed training scheme. **For the preliminary experiments and validation, we only used 5B training tokens at each stage**. Table 2 presents the results from the initial phase and the expert phase up to two iterations, including the outcomes of the stacking model after these iterations. All evaluations were performed using Hugging Face&apos;s Lighteval framework, with the exception of HumanEval, which was done using BigCodeBench.
 
 | Stage | Expert | HumanEval (pass@100) | GSM8k (lm_eval) | ARC Challenge | Winogrande | MMLU | Hellaswag |
-|-------|--------|----------------------|-------------------|-----------------|---------------|------------|------|-----------|
+|-------|--------|-------------------|-----------------|---------------|------------|------|-----------|
 | 0 | init | 0 |  0.0235 | 0.2448 | 0.5067 | 0.2543 | 0.2966 |
 | 1 | wiki | 0 | 0.0243 | 0.2448 | 0.5082 | 0.2542 | 0.2964 |
 | 1 | formatted_text |  0 | 0.0288 | 0.2474 | 0.5161 | 0.2499 | 0.3123 |
