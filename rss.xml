@@ -36,7 +36,7 @@ Inspired by prior [works](https://arxiv.org/abs/2302.08582) and the use of instr
 
 ### Branch-Train-Stack
 
-After training the seed model, we branch the training into 8 specialized expert models, each initialized from the base model. For our final training experiment, we plan to use 20 experts, with curated data spanning 20 diverse categories. These models are trained separately on domain-specific datasets (e.g., business, fiction, math, medical/health), with a data composition of 50% heterogeneous data and 50% expert-specific data. 
+In our initial experiments, we first train a seed model on 5B tokens. Then we branch the training into 8 specialized expert models, each initialized from the base model. For our final training experiment, we plan to use 20 experts, with curated data spanning 20 diverse categories. These models are trained separately on domain-specific datasets (e.g., business, fiction, math, medical/health), with a data composition of 50% heterogeneous data and 50% expert-specific data. 
 
 Within the heterogeneous portion, we intentionally repeat some data from earlier training stages to minimize unexpected distribution drift. While these numbers were chosen for the initial test, we are still experimenting with the ratio and repetition rate for training. The training is conducted independently for each expert model, ensuring specialization without intercommunication between branches. This approach significantly reduces compute requirements and the need for high-speed inter-node communication between large node clusters.
 
