@@ -38,7 +38,7 @@ The process can be broken down into several key stages:
 
 In our [previous blog](https://aurora-lm.github.io/posts/mixturevitae) we collected the dataset, MixtureVitae: A Permissive, High-Performance, Open-Access Pretraining Dataset. We sample chunks from this dataset across our training process.
 
-Our process begins with training an initial seed model—a 3-billion-parameter model initialized from scratch based on the *Qwen2.5-14B* architecture, with decreased number of layers to produce a 3B model. We sample roughly 5 billion heterogeneous tokens from MixtureVitae to serve as the base dataset for the seed model. Early experiments involve training several mixtures derived from MixtureVitae and evaluating them to select the best-performing model. For initial validation, we utilize 5 billion tokens for training at each stage. However, the training pipeline has been scaled to accommodate 20 billion tokens per stage per expert.
+Our process begins with training an initial seed model—a 3-billion-parameter model initialized from scratch based on the *Qwen2.5-14B* architecture, with decreased number of layers to produce a 3B model. We sample roughly 5 billion heterogeneous tokens from MixtureVitae to serve as the base dataset for the seed model. Early experiments involve training several mixtures derived from MixtureVitae and evaluating them to select the best-performing model. For initial validation, we utilize 5 billion tokens for training at each stage. However, the training pipeline has been scaled to accommodate 20 billion tokens per iteration per expert.
 
 <figure>
   <img src="https://raw.githubusercontent.com/aurora-lm/aurora-lm.github.io/main/assets/images/bts/bts-flow.png" alt="Branch Train Stack Process">
@@ -58,7 +58,7 @@ After training, all eight models are merged to form a new base model. Inspired b
 
 When scaling to larger models, we adopt a progressive stacking approach. After the N iterations — we perform the first stacking, creating an 8-billion-parameter model. This stacking process is derived from previous [works](https://arxiv.org/abs/2405.15319) on model stacking. We tested the models through this process and the results are promising. 
 
-In our final training phase, we plan to train each expert on 20 billion tokens during each stage. We will stack the 3-billion-parameter model after 15 iterations of BTS to create an 8-billion-parameter model, and then stack again after 5 more iterations to create a 20-billion-parameter model, and then train for one more iteration.
+In our final training phase, we plan to train each expert on 20 billion tokens during each iteration. We will stack the 3-billion-parameter model after 15 iterations of BTS to create an 8-billion-parameter model, and then stack again after 4 more iterations to create a 20-billion-parameter model, and then train for one more iteration.
 
 We will then use the known methods of [sparse upcyling](https://arxiv.org/abs/2212.05055) to create additional mixture of experts (MoE) models from the various experts we trained. See the [BTX methdology](https://arxiv.org/abs/2403.07816) which is another architecture that inspired our work. 
 
