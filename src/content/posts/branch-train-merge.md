@@ -56,7 +56,9 @@ Within the heterogeneous portion, we intentionally repeat some data from earlier
 
 After training, all eight models are merged to form a new base model. Inspired by state-of-the-art work, we employed the [DARE-TIES](https://arxiv.org/abs/2306.01708) merging algorithm with a density of 0.9 and assigned a weight of 0.05 to each merged model. While we initially chose equal weighting for each expert, we plan to conduct further ablation studies to optimize these parameters. This iterative process is repeated, progressively refining the model by integrating both general and specialized knowledge over multiple training cycles. Additionally, each expert's weights can be used to create an MoE as described below.
 
-When scaling to larger models, we adopt a progressive stacking approach. After the first two iterations—training on approximately 8×5 + 5 = 45 billion tokens—we perform the first stacking, creating an 8-billion-parameter model. This stacking process is derived from previous [works](https://arxiv.org/abs/2405.15319) on model stacking. In our final training phase, we plan to train each expert on 20 billion tokens during each stage. We will stack the 3-billion-parameter model after 9 iterations of BTS to create an 8-billion-parameter model, and then stack again after 5 more iterations to create a 20-billion-parameter model, and then train for one more iteration.
+When scaling to larger models, we adopt a progressive stacking approach. After the N iterations — we perform the first stacking, creating an 8-billion-parameter model. This stacking process is derived from previous [works](https://arxiv.org/abs/2405.15319) on model stacking. We tested the models through this process and the results are promising. 
+
+In our final training phase, we plan to train each expert on 20 billion tokens during each stage. We will stack the 3-billion-parameter model after 15 iterations of BTS to create an 8-billion-parameter model, and then stack again after 5 more iterations to create a 20-billion-parameter model, and then train for one more iteration.
 
 We will then use the known methods of [sparse upcyling](https://arxiv.org/abs/2212.05055) to create additional mixture of experts (MoE) models from the various experts we trained. See the [BTX methdology](https://arxiv.org/abs/2403.07816) which is another architecture that inspired our work. 
 
@@ -65,7 +67,7 @@ We will then use the known methods of [sparse upcyling](https://arxiv.org/abs/22
   <figcaption>The Branch-Train-Mix (BTX) process.</figcaption>
 </figure>
 
-Thus the goal is to train large models of up to 20B active parameters, while using a fraction of the compute - the gains coming from the BTM and stacking method. Additionally, similar to the BTX architecture, the experts can be used as MoE layers, thus creating models of > 200B parameters. This work, is to the best of our knowledge the combination of known methods for efficient training - BTM -> BTX -> Stacking, which will produce efficiently trained and high performing models.
+Thus the goal is to train large models of up to 20B active parameters, while using a fraction of the compute - the gains coming from the BTM and stacking method. Additionally, similar to the BTX architecture, the experts can be used as MoE layers, thus creating models of > 200B parameters. This work, is to the best of our knowledge the first combination of known methods for efficient training - BTM -> BTX -> Stacking, which will produce efficiently trained and high performing models.
 
 ## Preliminary Results
 
