@@ -105,6 +105,16 @@ Our preliminary results demonstrate the effectiveness of this approach, and we c
 
 Looking forward, we foresee more optimization opportunities in improving the serving performance. For instance, [DeltaMoE](<https://openreview.net/forum?id=FJ7Z8H6elV&referrer=%5BAuthor%20Console%5D(%2Fgroup%3Fid%3DICLR.cc%2F2025%2FWorkshop%2FSLLM%2FAuthors%23your-submissions>) proposes compressing the deltas in each expert, leading to improved efficiency and performance. We believe that BTS has the potential to deliver benefits not only in training but also in the efficient deployment and serving of large models.
 
+| Model                                                                         | Expert            | IFEval    | BBH       | GPQA | MUSR       | MMLU |
+|-------------------------------------------------------------------------------|-------------------|-----------|-----------|------|------------|------|
+| ontocord/wide_3b_sft_stage1.2-ss1-expert_news                                 | news              | 16.58     | 1.94      | 2.35 | 2.93       | 1.24 |
+| ontocord/wide_3b_sft_stage1.2-ss1-expert_fictional_lyrical                    | finctional_lyrical| 14.61     | 2.48      | 1.90 | 7.10       | 1.57 |
+| ontocord/wide_3b_sft_stage1.1-ss1-with_math.no_issue                          | math              | 12.98     | 3.13      | 1.34 | **7.93**   | 1.63 |
+| ontocord/wide_3b_sft_stage1.1-ss1-with_generics_intr_math_stories.no_issue    | math_stories      | 11.62     | **4.55**  | 1.79 | 2.19       | 1.37 |
+| ontocord/wide_3b_sft_stage1.1-ss1-with_r1_generics_intr_math_stories.no_issue | r1_math_stories   | **20.49** | 2.35      | 1.34 | 4.52       | 1.85 |
+
+*Table 3: Table 3. Benchmark results for the wide_3b_sft model when fine-tuned on “news,” “fictional_lyrical,” and “math” expert data, showing gains in IFEval, BBH, GPQA, MUSR, and MMLU.*
+
 ## Citation
 ```bibtex
 @misc{bts_aurora_2025,
